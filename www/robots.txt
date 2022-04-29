@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /index-eu.html
+Disallow: /booking/
+Disallow: /guide/
+Host: vivotour.ru
+Sitemap: https://vivotour.ru/sitemap.xml

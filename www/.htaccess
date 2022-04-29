@@ -1,0 +1,83 @@
+AddDefaultCharset utf-8
+Options -Indexes
+DirectoryIndex index.php 
+
+#php_value upload_max_filesize 10M
+#php_value post_max_size 100M
+
+#php_flag magic_quotes_gpc 0
+#php_flag magic_quotes_runtime 0
+
+#ErrorDocument 404 /404.php
+#ErrorDocument 403 /403.php
+
+#php_value session.cookie_lifetime 28800
+#php_value session.gc_maxlifetime 28800
+
+#php_value error_reporting 7
+
+#php_value session.save_path z:\\home\\cms\\tmp
+
+RewriteEngine on
+
+RewriteCond %{QUERY_STRING} ^excursion=19$
+RewriteRule ^city/florence/$ /excursion/?city=4&excursion=19 [QSD,R=301,L]
+
+#sitemap
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# https
+RewriteCond %{HTTPS}  !=on 
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L] 
+
+# SCSS: styles.scss (file) -> /scss.php/styles.scss (processing) -> styles.css (browser)
+RewriteRule ^scss\/(.*)\.css$ /scss.php/$1.scss [L]
+
+# hacks for proxy
+##RewriteRule ^robots\.txt$ robots.php [L]
+
+#RewriteBase /
+
+RewriteCond %{HTTP_HOST} \.eu$
+RewriteRule ^(.*)$ https://www.vivotour.ru/index-eu.html [R=302,L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# temporarily exclude .eu from indexing
+#RewriteCond %{HTTP_HOST} \.eu$
+#RewriteRule ^robots\.txt$ robots-eu.txt [L]
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^en/(.*)$ $1?l=en [L,QSA]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_URI} !(.*)/$
+#RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+# url processing
+
+# domain-mode (automated)
+##RewriteCond %{REQUEST_URI} !^/admin/
+##RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$
+##RewriteCond %{REQUEST_URI} !^/%2/
+##RewriteRule ^(.*)$ %2/$1
+
+# domain-mode (each domain specified)
+#RewriteCond %{REQUEST_URI} !^/admin/
+#RewriteCond %{HTTP_HOST} ^(www\.)?moscowkey$
+#RewriteCond %{REQUEST_URI} !^/site/
+#RewriteRule ^(.*)$ site/$1
+
+RewriteCond %{REQUEST_URI} !^/admin/
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-l 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
+
+# path-mode
+#RewriteCond %{REQUEST_URI} ^/booclick/
+#RewriteRule ^(.*)$ booclick/index.php [L]
