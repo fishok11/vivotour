@@ -18,21 +18,29 @@
             </div>
         </div>
     </div>
-    <div class="body-content">
-        <div class="g-container">
+    <div class="body-content" style="background-color: url);">
+        <!-- <div class="g-container">
             <div class="g-container-box home-line">
                 <?=$_SITE['section_paths']['allcities']['title']?>
             </div>
-        </div>
+        </div> -->
         <div class="g-container">
             <div class="g-container-box cities">
             <?  foreach ($_DATA['vi_city']['items'] as $city) { ?>
+                <div class="cities-container">
                     <a href="<?=$_SITE['section_paths']['city']['path']?>?city=<?=$city['id']?>" class="cities__item">
                         <img src="<?=$city['img_src']?>" alt="">
-                        <span class="cities__item-info">
-                            <?=$city['name']?>
-                        </span>
+                        <div class="cities__item-container">
+                            <div class="cities__item-info">
+                                <?=$city['name']?>
+                            </div>
+
+                            <div class="cities__item-excursion">
+                                <span class="cities__excursion-number">1243</span> экскурсии
+                            </div>  
+                        </div>
                     </a>
+                </div>    
             <?  } ?>
             </div>
         </div>

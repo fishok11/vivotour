@@ -23,9 +23,7 @@
 <?	} ?>
 
 
-	<link href="/css/styles.css?r=12" rel="stylesheet">
-	<link href="/css/content.css" rel="stylesheet">
-    <link href="/css/card.css" rel="stylesheet">
+	
     <link href="/css/redesignStyle.css" rel="stylesheet">
 
 	<link href="/fonts/font-awesome.min.css" rel="stylesheet">
