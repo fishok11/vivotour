@@ -145,6 +145,7 @@
         <div class="g-container">
             <div class="body-info">
                 <div class="body-info__container">
+                    <img src="/imgNew/Изображения/bodyGeo.png" alt="" class="body-geo">
                     <div class="body-info__container-head">
                         Наши преимущества
                     </div>

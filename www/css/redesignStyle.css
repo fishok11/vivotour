@@ -232,6 +232,14 @@ body {
     height: 100%;
     background-color: #ffffff;
     border-radius: 9px;
+    position: relative;
+}
+.body-geo {
+    width: 208px;
+    height: 30px;
+    position: absolute;
+    top: -150px;
+    right: 38px;
 }
 .body-info__container-head {
     display: flex;
