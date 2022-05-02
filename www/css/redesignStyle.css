@@ -70,6 +70,7 @@ body {
     color: var(--main-gren);
 }
 .popular-excursions__text-info {
+    font-size: 18px;
     margin-bottom: 40px;
 }
 .popular-excursions__info {
