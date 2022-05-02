@@ -23,11 +23,12 @@
 <?	} ?>
 
 
-	<link href="/css/styles.css?r=12" rel="stylesheet">
+
 	<link href="/css/content.css" rel="stylesheet">
     <link href="/css/card.css" rel="stylesheet">
     <link href="/css/redesignStyle.css" rel="stylesheet">
-
+    
+    
 	<link href="/fonts/font-awesome.min.css" rel="stylesheet">
 
 	<script src="/js/jquery-1.11.1.min.js"></script>
@@ -43,41 +44,56 @@ ga('send', 'pageview');
 </head>
 <body class="page-<?=$_SITE['section_type']?>">
 <div class="body">
-	<header>
+	<header class="header"> 
         <div class="g-container">
-            <div class="g-container-box">
-            	<div class="header">
-                    <div class="header-top">
-                        <div class="header-logo">
-                            <a href="/">VIVO tour</a>
-                        </div>
-                    <?  if (!empty($_SITE['menu']['main'])) { ?>
-                        <nav class="header-menu g-clearfix">
-                            <ul>
-                            <?	foreach ($_SITE['menu']['main'] as $id => $menu_item) { ?>
-                                    <li class="header-menu-item<? /*=!empty($menu_item['submenu'])?' w-submenu':''*/?>">
-                                        <a href="<?=$menu_item['url']?>"><?=$menu_item['title']?></a>
-                                    <?	/*if (isset($menu_item['submenu'])) { ?>
-                                        <div class="header-menu-submenu">
-                                            <ul>
-                                            <?	foreach ($menu_item['submenu'] as $id => &$submenu_item) { ?>
-                                                    <li><a href="<?=$submenu_item['url']?>"<?=$submenu_item['target_blank']?' target="_blank"':''?>><?=$submenu_item['title']?></a></li>
-                                            <?	} ?>
-                                            </ul>
-                                        </div>
-                                    <?	} */?>
-                                    </li>
-                            <?	} ?>
-                            </ul>
-                        </nav>
-                    <?  } ?>
-                        <div class="header-contacts">
-                        	<? /*<div class="header-contacts-text">Звоните, спрашивайте!</div> */ ?>
-                            <div class="header-contacts-phone"><?=$_SITE['settings']['phone']?></div>
-                            <div class="header-contacts-hours"><?=$_SITE['settings']['phone_hours']?></div>
-                        </div>
-                    </div>
-	            </div>
+            <div class="header-top">
+                <div >
+                    <a class="header-logo" href="/">VIVO tour</a>
+                </div>
+                <?  if (!empty($_SITE['menu']['main'])) { ?>
+                <nav class="header-menu g-clearfix">
+                    <ul>
+                    <?	foreach ($_SITE['menu']['main'] as $id => $menu_item) { ?>
+                            <li class="header-menu-item<? /*=!empty($menu_item['submenu'])?' w-submenu':''*/?>">
+                                <a href="<?=$menu_item['url']?>"><?=$menu_item['title']?></a>
+                            <?	/*if (isset($menu_item['submenu'])) { ?>
+                                <div class="header-menu-submenu">
+                                    <ul>
+                                        <?	foreach ($menu_item['submenu'] as $id => &$submenu_item) { ?>
+                                            <li><a href="<?=$submenu_item['url']?>"<?=$submenu_item['target_blank']?' target="_blank"':''?>><?=$submenu_item['title']?></a></li>
+                                        <?	} ?>
+                                    </ul>
+                                </div>
+                            <?	} */?>
+                            </li>
+                    <?	} ?>
+                    </ul>
+                </nav>
+                <?  } ?>  
+            </div>
+            <div class="header-middle">
+                <div class="header-middle-container">
+                    <p class="header-middle-textTop">увлектаелные экскурсии</p>
+                    <p class="header-middle-textMiddle">ПО ИТАЛИИ И ЕВРОПЕ</p>
+                    <p class="header-middle-textBottom">60 городов и направлений</p>
+                </div>    
+            </div>
+            <div class="header-location">
+                <p class="header-location-text1">Монумент Витториано</p>
+                <p class="header-location-text2">Рим</p>
+            </div>
+            <div class="header-search"> 
+                <div class="header-search-container">  
+                    <form class="header-search-form">
+                        <input class="header-search-input" type="text" placeholder="Название города или достопримечательности">
+                        <button class="header-search-button" type="submit">найти
+                            <div class="header-search-arrow">
+                                <div class="header-search-arrow1"></div>
+                                <div class="header-search-arrow2"></div>
+                            </div>   
+                        </button>
+                    </form>
+                </div>           
             </div>
         </div>
     </header>

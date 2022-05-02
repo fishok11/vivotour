@@ -1,0 +1,195 @@
+body {
+   font-family:  Calibri;
+   margin: 0;
+}
+:root {
+    --main-gren: #06ae8d;
+    --main-blue: #3a5072;
+}
+
+
+
+.g-container{
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+
+
+
+.header {
+    width: 100%;
+    height: 700px;
+    background: url('/imageNew/Фоны_1920/шапка_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 -20px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.header-top {
+    display: flex;
+    height: 100px;
+}
+.header-logo {
+    width: 175px;
+    height: 48px;
+    background-image: url("/imageNew/Изображения/лого.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 52px;
+    color: rgba(0, 0, 0, 0);
+}
+.header-menu {
+    position: absolute;
+    left: 45%; 
+    top: 30px; 
+}
+.header-menu ul {
+    padding: 0;
+}
+.header-menu-item {
+    list-style: none;
+}
+.header-menu-item a{
+    font-size: 24px;
+    color: var(--main-blue);
+    text-decoration: none;
+    border-bottom: 2px solid var(--main-gren);
+}
+
+
+
+
+
+.header-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 337px;
+}
+.header-middle-container{
+    height: auto;
+    position: relative;
+    top: 53%;
+}
+.header-middle-textTop,
+.header-middle-textMiddle,
+.header-middle-textBottom {
+    margin: 0;
+    color: #FFFFFF;
+    text-shadow: 0 0 30px #000000; 
+}
+.header-middle-textTop {
+    font-size: 42px;
+    font-weight: lighter;
+    position: relative;
+    top: 8px;
+}
+.header-middle-textMiddle {
+    font-size: 70px;
+    height: 75px;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+}
+.header-middle-textBottom {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.header-location {
+    position: absolute;
+    top: 346px;
+    color: #FFFFFF;
+}
+.header-location-text1 {
+    margin: 0;
+    font-weight: bold;
+}
+.header-location-text2 {
+    margin: 0;
+}
+
+
+
+
+
+
+.header-search {
+    width: 100%;
+    height: 263px;
+}
+.header-search-container  {
+    height: 68px;
+    width: 818px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 9px;
+    position: relative;
+    top: 143px;
+    left: 169px;
+}
+.header-search-form {
+    width: 810px;
+    height: 60;
+    display: flex;
+}
+.header-search-input {
+    width: 605px;
+    height: 60px;
+    padding: 0 0 0 50px;
+    margin: 0;
+    outline: none;
+    border: 0px;
+    background-image: url("/imageNew/Изображения/bashnya.png");
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: 4% 45%;
+    border-radius: 9px 0 0 9px; 
+}
+.header-search-button {
+    width: 205px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    outline: none;
+    border: 0px;
+    border-radius: 0 9px 9px 0;
+    background: linear-gradient(0deg, #0aaf83, #76d636);
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.header-search-arrow {
+    margin-left: 20px;
+}
+.header-search-arrow1 {
+    font-size: 20px;
+    width: 6px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 3px;
+    transform: rotate(45deg)
+    
+} 
+.header-search-arrow2 {
+    font-size: 20px;
+    width: 6px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 3px;
+    transform: rotate(-45deg)
+} 
+
