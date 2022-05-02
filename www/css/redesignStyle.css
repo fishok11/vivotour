@@ -29,7 +29,7 @@ body {
     width: 286px;
     height: 53px;
     text-transform: uppercase;
-    box-shadow: 0px 2px 5px 2px #9bdcdf98;
+    box-shadow: 0px 3px 5px 4px #80b0cc98;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@ body {
     margin-bottom: 23px;
 }
 .navigation-container__text {
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bold;
     color: var(--main-gren);
     margin-right: 118px;
@@ -59,11 +59,11 @@ body {
 }
 .navigation-item__info {
     margin-right: 67px;
-    font-size: 17px;
+    font-size: 19px;
     color: var(--main-blue);
 }
 .navigation-item__info--select{
-    font-size: 21px;
+    font-size: 22px;
     font-weight: bold;
     border-bottom: 3px solid var(--main-gren);
 }
@@ -85,7 +85,7 @@ body {
 }
 .navigation__text {
     margin-bottom: 38px;
-   font-size: 17px;
+   font-size: 19px;
 }
 
 
@@ -100,17 +100,19 @@ body {
 .cities-container {
     border-radius: 6px;
     box-shadow: 0px 3px 11px 1px #bac2c27e;
+    width: 217px;
 }
 .cities__item-container {
     background-color: #ffffff;
-    padding: 10px 0 9px 30px;
     position: relative;
     border-radius: 0 0 6px 6px;
+}
+.cities__item-container-text {
+    padding: 10px 0 9px 30px;
 }
 .cities__item {
     border-radius: 20px;
     display: block;
-    width: 215px;
     height: 212px;
     height: auto;
     margin: 0;
@@ -119,7 +121,7 @@ body {
 }
 .cities__item img {
     display: block;
-    width: 217px;
+    width: 100%;
     height: 133px;
     border-radius: 6px 6px 0 0;
 }
@@ -128,15 +130,14 @@ body {
     display: block;
     color: var(--main-blue);
     font-size: 18px;
-    font-weight: 900;
+    font-weight: bold;
     text-align: left;
-    width: 100%;
 }
 /* weight */
 .cities__item-info::before {
     display: block;
     content: '';
-    width: 217px;
+    width: 100%;
     height: 7px;
     background: rgba(241, 239, 238, 0.452);
     position: absolute;
@@ -145,12 +146,11 @@ body {
 } 
 /* ----------------- */
 .cities__item-excursion {
+    font-family: Calibri light;
     font-size: 17px;
-    font-weight: 400;
     color: #111111;
 }
 .cities__excursion-number {
-    font-weight: lighter;
     color: var(--main-blue);
 }
 /* weight */
@@ -239,26 +239,28 @@ body {
 .body-excursion__container-net-small 
 .body-excursion__item
 .body-excursion__item-container  {
-    margin: 10px 12px;
+    padding: 10px 12px;
 }
 .body-excursion__item {
     background: url(/imgNew/Изображения/shutterstock_516926059.jpg);
     background-size: cover;
-    width: 100%;
     border-radius: 8px;
     display: flex;
     align-items: flex-end;
     color: #ffffff;
-    box-shadow: inset 5px -16px 18px 0px #0c0c0c56;
 }
 .body-excursion__item-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     width: 100%;
-    margin: 10px 23px;
+    border-radius:  0 0 8px 8px;
+    padding: 10px 23px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
 }
 .excursion-item__text{
+    color: #ffffff;
 }
 .excursion-text__head {
     font-size: 20px;

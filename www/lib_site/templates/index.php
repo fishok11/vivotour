@@ -52,13 +52,16 @@
                     <a href="<?=$_SITE['section_paths']['city']['path']?>?city=<?=$city['id']?>" class="cities__item">
                         <img src="<?=$city['img_src']?>" alt="">
                         <div class="cities__item-container">
-                            <div class="cities__item-info">
-                                <?=$city['name']?>
-                            </div>
+                            <div class="cities__item-container-text">
+                                <div class="cities__item-info">
+                                    <?=$city['name']?>
+                                </div>
 
-                            <div class="cities__item-excursion">
-                                <span class="cities__excursion-number">1243</span> экскурсии
-                            </div>  
+                                <div class="cities__item-excursion">
+                                    <span class="cities__excursion-number">1243</span> экскурсии
+                                </div>   
+                            </div>
+                            
                         </div>
                     </a>
                 </div>    
