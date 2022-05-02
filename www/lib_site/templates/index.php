@@ -18,6 +18,75 @@
             </div>
         </div>
     </div>
+    <div class="popular-excursions">
+        <div class="g-container">
+            <div class="popular-excursions__container">
+                <div class="popular-excursions__text">
+                    <div class="popular-excursions__head">
+                      <span class="popular-excursions__head-color">Популярные</span> экскурсии  
+                    </div>
+                   <div class="line">
+                        <div class="line-green"></div>
+                        <div class="line-red"></div>
+                   </div>
+                   <div class="popular-excursions__text-info">
+                       Направления, которые выбирали наши посетители
+                    </div>
+                </div>
+                
+                <div class="popular-excursions__info">
+                    <div>
+                        <img src="/imgNew/Изображения/shutterstock_516926059.jpg" alt="" class="popular-excursions__info-img">
+                        <div class="body-excursion__item-container">
+                                <div class="excursion-item__text">
+                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <div class="excursion-text__info">1 час</div>
+                                </div>
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                    <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="/imgNew/Изображения/shutterstock_516926059.jpg" alt="" class="popular-excursions__info-img">
+                        <div class="body-excursion__item-container">
+                                <div class="excursion-item__text">
+                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <div class="excursion-text__info">1 час</div>
+                                </div>
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                    <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="/imgNew/Изображения/shutterstock_516926059.jpg" alt="" class="popular-excursions__info-img">
+                        <div class="body-excursion__item-container">
+                                <div class="excursion-item__text">
+                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <div class="excursion-text__info">1 час</div>
+                                </div>
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                    <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="g-container-box home-button">
+                    <a href="" class="g-button">Посмотреть все экскурсии</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="body-content">
         <!-- <div class="g-container">
             <div class="g-container-box home-line">
@@ -70,7 +139,7 @@
         </div>
         <div class="g-container">
             <div class="g-container-box home-button">
-                <a href="<?=$_SITE['section_paths']['allcities']['path']?>" class="g-button" rel="nofollow">Посмотреть все города</a>
+                <a href="<?=$_SITE['section_paths']['allcities']['path']?>" class="g-button" rel="nofollow">Смотреть все города</a>
             </div>
         </div>
         <div class="g-container">
