@@ -30,6 +30,7 @@
     
     
 	<link href="/fonts/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ed78f30c5.js" crossorigin="anonymous"></script>
 
 	<script src="/js/jquery-1.11.1.min.js"></script>
 	<script src="/js/jquery.easing.js"></script>
@@ -79,6 +80,7 @@ ga('send', 'pageview');
                 </div>    
             </div>
             <div class="header-location">
+                <i class="header-location-map fa-solid fa-location-dot"></i>
                 <p class="header-location-text1">Монумент Витториано</p>
                 <p class="header-location-text2">Рим</p>
             </div>

@@ -108,6 +108,12 @@ body {
     top: 346px;
     color: #FFFFFF;
 }
+.header-location-map {
+    font-size: 11px;
+    position: absolute;
+    left: -13px;
+    top: 4px;
+}
 .header-location-text1 {
     margin: 0;
     font-weight: bold;
@@ -115,8 +121,6 @@ body {
 .header-location-text2 {
     margin: 0;
 }
-
-
 
 
 
@@ -158,7 +162,7 @@ body {
 .header-search-button {
     width: 205px;
     height: 60px;
-    padding: 0;
+    padding: 0 0 0 25px;
     margin: 0;
     position: relative;
     outline: none;
@@ -173,7 +177,7 @@ body {
     justify-content: center;
 } 
 .header-search-arrow {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .header-search-arrow1 {
     font-size: 20px;
