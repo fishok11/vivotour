@@ -276,7 +276,71 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 	            	<a href=".">Вернуться к <?=get_title_by_tag($tag_id, 1)?></a>
         	<?	} else { ?>
 	            	<div class="order">
-		            	<form method="post">
+						<form action="" class="order__form">
+							<div class="order-form__item">
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="text" id="sample1">
+									<label class="mdl-textfield__label" for="sample1">Выберите дату</label>
+								</div>
+
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="text" id="sample1">
+									<label class="mdl-textfield__label" for="sample1">Выберите время</label>
+								</div>
+							</div>
+
+							<div class="order-form__item">
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="text" id="sample1">
+									<label class="mdl-textfield__label" for="sample1">Введите количество человек</label>
+								</div>
+							</div>
+
+							<div class="order-form__item">
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="text" id="sample1">
+									<label class="mdl-textfield__label" for="sample1">Введите ваше имя</label>
+								</div>
+
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="text" id="sample1">
+									<label class="mdl-textfield__label" for="sample1">Введите вашу фамилию</label>
+								</div>
+							</div>
+							
+							<div class="order-form__item">
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="text" id="sample1">
+									<label class="mdl-textfield__label" for="sample1">Введите ваш e-mail</label>
+								</div>
+
+								<div class="mdl-textfield mdl-js-textfield">
+									<input class="mdl-textfield__input" type="text" id="sample1">
+									<label class="mdl-textfield__label" for="sample1">Введите ваш телефон </label>
+								</div>
+							</div>
+
+							<div class="order-form__item">
+								<div class="mdl-textfield mdl-js-textfield">
+									<textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+									<label class="mdl-textfield__label" for="sample5">Вопросы и комментарии</label>
+								</div>
+							</div>
+
+							<div class="order-form__text">
+								Укажите количество участников, 
+								чтобы мы рассчитали стоимость экскурсии. 
+								Вам ничего не нужно оплачивать, 
+								пока вы не получите ответ и подтверждение гида.
+							</div>
+
+							<div class="order-form__button-container">
+								<div class="g-container-box home-button">
+									<a href="" class="g-button">Забронировать экскурсию</a>
+								</div>
+							</div>
+						</form>
+		            	<!-- <form method="post">
 		            		<div class="order__field">
 					        	<label>
 					        		Дата <?=get_title_by_tag($tag_id, 1)?>
@@ -368,7 +432,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 					        <input type="hidden" name="upfront" value="<?=$is_group_price ? ($has_upfront ? $upfront_price : $price_excursion) : 0 ?>" />
 					        <input type="hidden" name="total" value="<?=$is_group_price ? $price_excursion : 0 ?>" />
 					        <button type="submut" class="g-button">Забронировать <?=get_title_by_tag($tag_id, 2)?></button>
-				        </form>
+				        </form> -->
 			        </div>
 		    <?	} ?>
             </div>
