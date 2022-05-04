@@ -1,10 +1,14 @@
 body {
-   font-family:  Calibri;
+   font-family: Calibri, 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;;
    margin: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
 }
 :root {
     --main-gren: #06ae8d;
     --main-blue: #3a5072;
+    --main-red: #be2a2c;
 }
 
 
@@ -20,7 +24,7 @@ body {
 .header {
     width: 100%;
     height: 700px;
-    background: url('/imageNew/Фоны_1920/шапка_1920.jpg');
+    background: url('/imageNew/backgrounds_1920/шапка_1920.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +39,7 @@ body {
 .header-logo {
     width: 175px;
     height: 48px;
-    background-image: url("/imageNew/Изображения/лого.png");
+    background-image: url("/imageNew/icons/лого.png");
     background-repeat: no-repeat;
     position: absolute;
     top: 52px;
@@ -106,20 +110,22 @@ body {
 .header-location {
     position: absolute;
     top: 346px;
-    color: #FFFFFF;
 }
-.header-location-map {
+.location-map {
     font-size: 11px;
     position: absolute;
     left: -13px;
     top: 4px;
+    color: #FFFFFF;
 }
-.header-location-text1 {
+.location-text1 {
     margin: 0;
     font-weight: bold;
+    color: #FFFFFF
 }
-.header-location-text2 {
+.location-text2 {
     margin: 0;
+    color: #FFFFFF;
 }
 
 
@@ -153,7 +159,7 @@ body {
     margin: 0;
     outline: none;
     border: 0px;
-    background-image: url("/imageNew/Изображения/bashnya.png");
+    background-image: url("/imageNew/icons/bashnya.png");
     background-color: #FFFFFF;
     background-repeat: no-repeat;
     background-position: 4% 45%;
@@ -197,3 +203,419 @@ body {
     transform: rotate(-45deg)
 } 
 
+
+
+
+.reviews {
+    width: 100%;
+    height: auto;
+    
+}
+.reviews-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-top{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--main-gren);
+    margin: 50px 0 26px 0;
+}
+.reviews-line {
+    display: flex;
+}
+.reviews-line1 {
+    width: 30px;
+    height: 2px;
+    background: var(--main-gren);
+}
+.reviews-line2 {
+    width: 30px;
+    height: 2px;
+    background: var(--main-red);
+}
+.reviews-subtitle {
+    font-size: 20px;
+    margin-bottom: 55px;
+}
+.reviews-feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 135px;
+}
+.reviews__container {
+    margin-bottom: 12px;
+    width: 100%;
+}
+.page-index
+.reviews__container {
+    display: flex;
+}
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 21px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e8e8e8;
+    width: 100%;
+}
+.page-index
+.reviews__item {
+    border-bottom: none;
+}
+.reviews-item__stars {
+    text-align: center;
+    margin-bottom: 14px;
+}
+.star {
+    color: #cccccc;
+}
+.star--color {
+    color: #ffe440;
+}
+.reviews-item__user {
+    text-align: center;
+    margin-bottom: 23px;
+    font-size: 20px;
+}
+.reviews-item__user-name {
+    color: var(--main-blue);
+    font-weight: bold;
+}
+.reviews-item__user-title {
+    color: var(--main-gren);
+}
+.reviews-item__info {
+    margin: 0 auto;
+    font-weight: 400;
+    width: 547px;
+}
+.reviews-item__info-item {
+    display: inline-block;
+}
+
+.reviews-arrow1-top {
+    width: 13px;
+    height: 2px;
+    margin-bottom: 6px;
+    background: var(--main-gren);
+    transform: rotate(-45deg)
+}
+.reviews-arrow1-bottom {
+    width: 13px;
+    height: 2px;
+    margin-top: 6px;
+    background: var(--main-gren);
+    transform: rotate(45deg)
+}
+.reviews-arrow2-top {
+    width: 13px;
+    height: 2px;
+    margin-bottom: 6px;
+    background: var(--main-gren);
+    transform: rotate(45deg)
+}
+.reviews-arrow2-bottom {
+    width: 13px;
+    height: 2px;
+    margin-top: 6px;
+    background: var(--main-gren);
+    transform: rotate(-45deg)
+}
+
+
+
+
+
+.background-footer {
+    
+    
+}
+
+.footer {
+    height: 1174px; 
+    background-image: url("/imageNew/backgrounds_1920/background3_1920.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.footer-location {
+    width: 100%;
+    height: 270px;
+}
+.footer-location-volcano {
+    position: relative;
+    left: 90%;
+}
+.footer-location-ruins {
+    position: relative;
+    top: 65%;
+    left: 83%;
+}
+.footer-description {
+    width: 100%;
+    height: 538px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.footer-description-container {
+    width: 1116px;
+    height: 508px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%);
+    border-radius: 10px;
+}
+.footer-description-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-description-title-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--main-gren);
+    margin: 30px 0 26px 0;
+    display: flex;
+    justify-content: center;
+}
+.footer-description-line {
+    display: flex;
+    justify-content: center;
+}
+.footer-description-line1 {
+    width: 30px;
+    height: 2px;
+    background: var(--main-gren);
+}
+.footer-description-line2 {
+    width: 30px;
+    height: 2px;
+    background: var(--main-red);
+}
+.footer-description-text {
+    display: flex;
+    margin-top: 10px;
+}
+.footer-description-text-left {
+    font-size: 20px;
+    margin-left: 65px;
+    font-weight: lighter;
+}
+.footer-description-text-right {
+    font-size: 20px;
+    margin-left: 47px;
+}
+.footer-description-text-border {
+    border-bottom: 2px solid var(--main-gren);
+}
+.footer-description-number {
+    font-weight: bold;
+    color: var(--main-gren);
+    margin-left: 5px;
+}
+
+
+
+
+
+.footer-bottom {
+    
+}
+
+.footer-menu {
+    border-bottom: 1px solid #1d81a0;
+}
+.footer-menu-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+.footer-menu-item {
+    list-style: none;
+}
+.footer-menu-item-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    height: 142px;
+}
+.footer-contacts-chat {
+    display: flex;
+    flex-direction: column;
+}
+.footer-contacts-chat-text1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0 0 25px 0;
+}
+.footer-contacts-chat-text2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+}
+.footer-contacts-chat-messenger {
+    width: 163px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.footer-contacts-chat-vk,
+.footer-contacts-chat-fb,
+.footer-contacts-chat-tg {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-contacts-chat-vk {
+    background-image: url("/imageNew/icons/vkbig.png");
+}
+.footer-contacts-chat-fb {
+    background-image: url("/imageNew/icons/fbbig.png");
+}
+.footer-contacts-chat-tg {
+    background-image: url("/imageNew/icons/tg.png");
+}
+.footer-contacts-numbers {    
+    display: flex;
+    flex-direction: column;
+}
+.footer-contacts-numbers-mail {
+    width: fit-content;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-bottom: 2px solid var(--main-gren);
+    margin: 0 0 25px 0;
+    font-weight: lighter;
+}
+.footer-contacts-numbers-phone {
+    font-size: 26px;
+    color: #FFFFFF;
+    margin: 0 0 22px;
+    font-weight: 100;
+}
+.footer-contacts-numbers-hours {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: lighter;
+}
+.footer-contacts-mailing {
+    display: flex;
+    flex-direction: column;
+}
+.footer-contacts-mailing-form {
+    width: 464px;
+    height: 50;
+    display: flex;
+    margin: 0 0 10px 0;
+}
+.footer-contacts-mailing-input {
+    width: 314px;
+    height: 50px;
+    padding: 0 0 0 20px;
+    margin: 0;
+    outline: none;
+    border: 0px;
+    background-color: #FFFFFF;
+    border-radius: 9px 0 0 9px;
+}
+.footer-contacts-mailing-button {
+    width: 150px;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    outline: none;
+    border: 0px;
+    border-radius: 0 9px 9px 0;
+    background: linear-gradient(0deg, #0aaf83, #76d636);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-contacts-mailing-text {
+    font-size: 15px;
+    font-weight: 100;
+    color: #FFFFFF;
+    margin: 0;
+}
+.footer-contacts-icons {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-contacts-icons-logo {
+    background-image: url("/imageNew/icons/logofooter.png");
+    width: 120px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0 28px 0;
+}
+.footer-contacts-icons-massengers {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0 0 25px 0;
+}
+.footer-contacts-icons-inst,
+.footer-contacts-icons-vk,
+.footer-contacts-icons-tw,
+.footer-contacts-icons-fb {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-contacts-icons-inst {
+    background-image: url("/imageNew/icons/inst.png");
+}
+.footer-contacts-icons-vk {
+    background-image: url("/imageNew/icons/vk.png");
+}
+.footer-contacts-icons-tw {
+    background-image: url("/imageNew/icons/twitter.png");
+}
+.footer-contacts-icons-fb {
+    background-image: url("/imageNew/icons/facebook.png");
+}
+.footer-contacts-icons-logo-cards {
+    background-image: url("/imageNew/icons/pay.png");
+    width: 120px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
