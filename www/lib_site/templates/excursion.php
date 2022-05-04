@@ -62,6 +62,135 @@
         </div>
         <div itemprop="articleBody" class="g-container">
             <div class="g-container-box single">
+
+                <div class="single__body text-content">
+                    <div class="single__body-main">
+                        <?=$excursion['body']?>
+                    </div>
+                <?  if ($excursion['extra_info3']) { ?>
+                        <h3>Организационные детали</h3>
+                        <?=$excursion['extra_info3']?>
+                <?  } ?>
+                <?  if ($reviews_count) { ?>
+                        <a name="reviews"></a>
+                        <div class="reviews">
+                            <h3>Отзывы об экскурсии</h3>
+                            <div class="line">
+                                <div class="line-green"></div>
+                                <div class="line-red"></div>
+                            </div>
+
+                            <div class="reviews-text">Что о нас пишут путешественники</div>
+
+                            <div class="reviews__container">
+                                <div class="reviews__item">
+                                    <div class="reviews-item__stars">
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star"><i class="fa fa-star"></i></span>
+                                    </div>
+                                    <div class="reviews-item__user">
+                                        <span class="reviews-item__user-name">Ирина</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
+                                    </div>
+                                    <div class="reviews-item__info">
+                                        Отличное знакомство с Римом. Очень знающий и приятный гид.
+                                        Формат небольшой группы позволял задавать много вопросов.
+                                        Маргарита явно увлечена Римом и его историей. 
+                                        
+                                        <div class="reviews-item__info-item">
+                                            <div class="excursion-item__arrow-container">
+                                                <div class="excursion-item__arrow">
+                                                    <a>
+                                                        <div class="header-search-arrow1"></div>
+                                                        <div class="header-search-arrow2"></div>
+                                                    </a>   
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews__item">
+                                    <div class="reviews-item__stars">
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star"><i class="fa fa-star"></i></span>
+                                    </div>
+                                    <div class="reviews-item__user">
+                                        <span class="reviews-item__user-name">Ирина</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
+                                    </div>
+                                    <div class="reviews-item__info">
+                                        Отличное знакомство с Римом. Очень знающий и приятный гид.
+                                        Формат небольшой группы позволял задавать много вопросов.
+                                        Маргарита явно увлечена Римом и его историей. 
+
+                                        <div class="reviews-item__info-item">
+                                            <div class="excursion-item__arrow-container">
+                                                <div class="excursion-item__arrow">
+                                                    <a>
+                                                        <div class="header-search-arrow1"></div>
+                                                        <div class="header-search-arrow2"></div>
+                                                    </a>   
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews__item">
+                                    <div class="reviews-item__stars">
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star star--color"><i class="fa fa-star"></i></span>
+                                        <span class="star"><i class="fa fa-star"></i></span>
+                                    </div>
+                                    <div class="reviews-item__user">
+                                        <span class="reviews-item__user-name">Ирина</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
+                                    </div>
+                                    <div class="reviews-item__info">
+                                        Отличное знакомство с Римом. Очень знающий и приятный гид.
+                                        Формат небольшой группы позволял задавать много вопросов.
+                                        Маргарита явно увлечена Римом и его историей. 
+
+                                        <div class="reviews-item__info-item">
+                                            <div class="excursion-item__arrow-container">
+                                                <div class="excursion-item__arrow">
+                                                    <a>
+                                                        <div class="header-search-arrow1"></div>
+                                                        <div class="header-search-arrow2"></div>
+                                                    </a>   
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="g-container-box home-button">
+                                    <a href="" class="g-button">Посмотреть все экскурсии</a>
+                                </div>
+                            </div>
+                        <!-- <?  foreach ($reviews as $review) { ?>
+                                <div class="reviews-item">
+                                    <div>
+                                        <?=$review['name']?>
+                                        <?  out_stars($review['stars']) ?>
+                                        <span class="review-item-date">
+                                            <?=text_date_str($review['created']) ?>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <?=nl2br($review['body'])?>
+                                    </div>
+                                </div>
+                        <?  } ?> -->
+                        </div>
+                <?  } ?>
+                </div>
                 <aside>
                     <div class="details">
                         <div class="details__items">
@@ -72,7 +201,7 @@
                             <div class="details__item"><span class="details__item-title">Размер группы</span> до <?=$excursion['people_max']?> человек</div>
                             <div class="details__item"><span class="details__item-title">Дети</span> Можно с детьми</div>
                         <?  if ($excursion['extra_info4']) { ?>
-                                <div class="details__item"><div class="details__item-title">В стоимость включено</div><?=nl2br($excursion['extra_info4'])?></div>
+                                <div class="details__item"><div class="details__item-title">В стоимость <br> включено</div><?=nl2br($excursion['extra_info4'])?></div>
                         <?  }
                             if ($excursion['extra_info5']) { ?>
                                 <div class="details__item"><div class="details__item-title">Не входит в стоимость</div><?=nl2br($excursion['extra_info5'])?></div>
@@ -81,7 +210,7 @@
                                 <div class="details__item"><div class="details__item-title">Рейтинг</div>
                                 <?  out_stars($reviews_avg) ?>
                                     <?=$reviews_avg?>
-                                    <a href="#reviews" class="g-anchor">по <?=$reviews_count?> отзыв<?=1 == $reviews_count ? 'у' : 'ам'?></a>
+                                    <!-- <a href="#reviews" class="g-anchor">по <?=$reviews_count?> отзыв<?=1 == $reviews_count ? 'у' : 'ам'?></a> -->
                                 </div>
                         <?  }
                         ?>
@@ -106,51 +235,25 @@
                 <?  if (count($guides)) { ?>
                         <div class="guides">
                             <div class="guides__title"><?=get_title_by_tag($tag_id, 2);?> <?=count($guides) > 1 ? 'проводят' : 'проводит' ?></div>
-                        <?  foreach ($guides as $guide) { ?>
-                            <div class="guides__guide">
-                                <div class="guide__photo">
-                                    <a href="/guide/?guide=<?=$guide['id']?>">
-                                        <img src="<?=$guide['img_src']?>" alt=""></a>
-                                </div>
-                                <div class="guide__details">
-                                    <a href="/guide/?guide=<?=$guide['id']?>" class="guide__details-title">
-                                        <?=$guide['name']?>
-                                    </a>
-                                </div>
+                            <div class="guides-container">
+                                <?  foreach ($guides as $guide) { ?>
+                                    <div class="guides__guide">
+                                        <div class="guide__photo">
+                                            <a href="/guide/?guide=<?=$guide['id']?>">
+                                                <img src="<?=$guide['img_src']?>" alt=""></a>
+                                        </div>
+                                        <div class="guide__details">
+                                            <a href="/guide/?guide=<?=$guide['id']?>" class="guide__details-title">
+                                                <?=$guide['name']?>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?  } ?>
                             </div>
-                        <?  } ?>
+                        
                         </div>
                     <?  } ?>
                 </aside>
-                <div class="single__body text-content">
-                    <div class="single__body-main">
-                        <?=$excursion['body']?>
-                    </div>
-                <?  if ($excursion['extra_info3']) { ?>
-                        <h3>Организационные детали</h3>
-                        <?=$excursion['extra_info3']?>
-                <?  } ?>
-                <?  if ($reviews_count) { ?>
-                        <a name="reviews"></a>
-                        <div class="reviews">
-                            <h3>Отзывы</h3>
-                        <?  foreach ($reviews as $review) { ?>
-                                <div class="reviews-item">
-                                    <div>
-                                        <?=$review['name']?>
-                                        <?  out_stars($review['stars']) ?>
-                                        <span class="review-item-date">
-                                            <?=text_date_str($review['created']) ?>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <?=nl2br($review['body'])?>
-                                    </div>
-                                </div>
-                        <?  } ?>
-                        </div>
-                <?  } ?>
-                </div>
             </div>
         </div>
     </div>
@@ -159,6 +262,6 @@
 
 function out_stars($rating) {
     for ($i = 1; $i <= 5; $i++) {
-        $color = ($i <= round($rating) ? '#008cbb' : '#ccc'); ?><span class="star"><i class="fa fa-star" style="color: <?=$color?>;"></i></span><?  }
+        // $color = ($i <= round($rating) ? '#008cbb' : '#ccc'); ?><span class="star star--color"><i class="fa fa-star" style="color: <?=$color?>;"></i></span><?  }
 }
 ?>

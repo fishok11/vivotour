@@ -4,7 +4,7 @@
     }
 
     $banner = current($_DATA['banner']['items']); ?>
-    <div class="index-hero" style="background-image: url('<?=$banner['img_src']?>')">
+    <!-- <div class="index-hero" style="background-image: url('<?=$banner['img_src']?>')">
         <div class="g-container">
             <div class="g-container-box">
 
@@ -17,13 +17,13 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="popular-excursions">
         <div class="g-container">
             <div class="popular-excursions__container">
                 <div class="popular-excursions__text">
                     <div class="popular-excursions__head">
-                      <span class="popular-excursions__head-color">Популярные</span> экскурсии  
+                      <span class="popular-excursions__head-color">Популярные</span> экскурсии 
                     </div>
                    <div class="line">
                         <div class="line-green"></div>
@@ -36,7 +36,7 @@
                 
                 <div class="popular-excursions__info">
                     <div>
-                        <img src="/imgNew/Изображения/shutterstock_516926059.jpg" alt="" class="popular-excursions__info-img">
+                        <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
                         <div class="body-excursion__item-container">
                                 <div class="excursion-item__text">
                                     <div class="excursion-text__head">Название экскурсии</div>
@@ -44,14 +44,14 @@
                                 </div>
                                 <div class="excursion-item__arrow-container">
                                     <div class="excursion-item__arrow">
-                                    <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
                                 </div>
                             </div>  
                         </div>
                     </div>
 
                     <div>
-                        <img src="/imgNew/Изображения/shutterstock_516926059.jpg" alt="" class="popular-excursions__info-img">
+                        <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
                         <div class="body-excursion__item-container">
                                 <div class="excursion-item__text">
                                     <div class="excursion-text__head">Название экскурсии</div>
@@ -59,14 +59,14 @@
                                 </div>
                                 <div class="excursion-item__arrow-container">
                                     <div class="excursion-item__arrow">
-                                    <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
                                 </div>
                             </div>  
                         </div>
                     </div>
 
                     <div>
-                        <img src="/imgNew/Изображения/shutterstock_516926059.jpg" alt="" class="popular-excursions__info-img">
+                        <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
                         <div class="body-excursion__item-container">
                                 <div class="excursion-item__text">
                                     <div class="excursion-text__head">Название экскурсии</div>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="excursion-item__arrow-container">
                                     <div class="excursion-item__arrow">
-                                    <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
                                 </div>
                             </div>  
                         </div>
@@ -145,25 +145,25 @@
         <div class="g-container">
             <div class="body-info">
                 <div class="body-info__container">
-                    <img src="/imgNew/Изображения/bodyGeo.png" alt="" class="body-geo">
+                    <img src="/imgNew/img/bodyGeo.png" alt="" class="body-geo">
                     <div class="body-info__container-head">
                         Наши преимущества
                     </div>
                     <div class="body-info__container-text">
                         <div class="body-text__item">
-                            <img src="/imgNew/Изображения/listg.png" alt="">
+                            <img src="/imgNew/img/listg.png" alt="">
                             <div>
                                 <span class="body-text__item-head">Lorem ipsum dolor sit amet.<br></span>  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
                             </div>
                         </div>
                         <div class="body-text__item">
-                            <img src="/imgNew/Изображения/peoplecartg.png" alt="">
+                            <img src="/imgNew/img/peoplecartg.png" alt="">
                             <div>
                                 <span class="body-text__item-head">Lorem ipsum dolor sit amet.<br></span>  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
                             </div>
                         </div>
                         <div class="body-text__item">
-                            <img src="/imgNew/Изображения/babkig.png" alt="">
+                            <img src="/imgNew/img/babkig.png" alt="">
                             <div>
                                 <span class="body-text__item-head">Lorem ipsum dolor sit amet.<br></span>  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
                             </div>
@@ -194,8 +194,11 @@
                                         <div class="excursion-text__info">1 час</div>
                                     </div>
                                     <div class="excursion-item__arrow-container">
-                                        <div class="excursion-item__arrow">
-                                        <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                    <div class="excursion-item__arrow">
+                                            <a>
+                                                <div class="header-search-arrow1"></div>
+                                                <div class="header-search-arrow2"></div>
+                                            </a>   
                                         </div>
                                     </div>  
                                 </div>
@@ -209,7 +212,10 @@
                                     </div>
                                     <div class="excursion-item__arrow-container">
                                         <div class="excursion-item__arrow">
-                                        <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                            <a>
+                                                <div class="header-search-arrow1"></div>
+                                                <div class="header-search-arrow2"></div>
+                                            </a>   
                                         </div>
                                     </div>  
                                 </div> 
@@ -223,7 +229,10 @@
                                     </div>
                                     <div class="excursion-item__arrow-container">
                                         <div class="excursion-item__arrow">
-                                        <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                            <a>
+                                                <div class="header-search-arrow1"></div>
+                                                <div class="header-search-arrow2"></div>
+                                            </a>   
                                         </div>
                                     </div>  
                                 </div>
@@ -239,7 +248,10 @@
                                     </div>
                                     <div class="excursion-item__arrow-container">
                                         <div class="excursion-item__arrow">
-                                        <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                            <a>
+                                                <div class="header-search-arrow1"></div>
+                                                <div class="header-search-arrow2"></div>
+                                            </a>   
                                         </div>
                                     </div>  
                                 </div>
@@ -253,7 +265,10 @@
                                     </div>
                                     <div class="excursion-item__arrow-container">
                                         <div class="excursion-item__arrow">
-                                        <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                            <a>
+                                                <div class="header-search-arrow1"></div>
+                                                <div class="header-search-arrow2"></div>
+                                            </a>   
                                         </div>
                                     </div>   
                                 </div>
@@ -267,7 +282,10 @@
                                     </div>
                                     <div class="excursion-item__arrow-container">
                                         <div class="excursion-item__arrow">
-                                        <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                            <a>
+                                                <div class="header-search-arrow1"></div>
+                                                <div class="header-search-arrow2"></div>
+                                            </a>   
                                         </div>
                                     </div>  
                                 </div>
@@ -281,7 +299,10 @@
                                     </div>
                                     <div class="excursion-item__arrow-container">
                                         <div class="excursion-item__arrow">
-                                        <a><img src="/imgNew/Изображения/arrRight.png" alt=""></a>   
+                                            <a>
+                                                <div class="header-search-arrow1"></div>
+                                                <div class="header-search-arrow2"></div>
+                                            </a>   
                                         </div>
                                     </div>   
                                 </div>
@@ -312,4 +333,4 @@
                 </div>
             </div>
     <?  } ?> -->
-    </div>
+</div>

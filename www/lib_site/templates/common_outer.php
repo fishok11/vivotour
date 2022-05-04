@@ -28,6 +28,8 @@
 
 	<link href="/fonts/font-awesome.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
 	<script src="/js/jquery-1.11.1.min.js"></script>
 	<script src="/js/jquery.easing.js"></script>
     <script>

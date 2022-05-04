@@ -7,7 +7,7 @@ function out_crumbs($levels_num = 3) {
     global $_SITE; ?>
     <nav class="crumbs">
         <ul>
-            <li class="crumbs__item"><a href="/">Главная</a></li>
+            <li class="crumbs__item crumbs__item--main"><a href="/">Главная</a></li>
         <?  // /excursion/rome/sem-holmov-rima/
             $level = 0;
             foreach($_SITE['crumbs'] as $path => $crumb) {
@@ -20,7 +20,7 @@ function out_crumbs($levels_num = 3) {
                 } else {
                     $is_current = true;
                 } ?>
-                <li class="crumbs__item">
+                <li class="crumbs__item crumbs__item--title">
                     <? if (empty($is_current)) { ?>
                         <a href="<?=$url?>"><?=$crumb['title']?></a>
                     <? } else { ?>
