@@ -348,7 +348,6 @@ h1 {
 }
 .excursion-text__info {
     font-weight: lighter;
-    font-size: 17px;
 }
 .excursion-item__arrow-container {
     display: flex;
@@ -359,7 +358,7 @@ h1 {
     background-color: #2becc52f;
     border-radius: 50%;
 }
-.excursion-item__arrow{
+.excursion-item__arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,6 +366,12 @@ h1 {
     height: 22px;
     background-color: #1dc5a3;;
     border-radius: 50%;
+}
+.excursion-item__arrow a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
 }
 
 .page-excursion .body-content {
