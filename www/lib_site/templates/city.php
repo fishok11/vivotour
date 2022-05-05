@@ -75,12 +75,24 @@
                         <figure class="excursions__item">
                             <a href="<?=$link?>" class="excursions__item-image">
                                 <img src="<?=$excursion['img_src']?>" alt="">
-                                <span class="excursions__item-duration"><?=out_duration($excursion['duration'])?> </span>
                             </a>
-                            <figcaption>
-                                <a href="<?=$link?>" class="excursions__item-title">
-                                    <?=$excursion['title']?>
-                                </a>
+
+                            <div class="excursions__item-image-container">
+                                <div class="excursions__item-image-text">
+                                    <a href="<?=$link?>" class="excursions__item-title">
+                                        <?=$excursion['title']?>
+                                    </a>
+                                    <span class="excursions__item-duration"><?=out_duration($excursion['duration'])?> </span>
+                                </div>
+
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                            <!-- <figcaption>
                                 <div class="excursions__item-info">
                                     <?=$excursion['annotation']?>
                                 </div>
@@ -95,7 +107,7 @@
                                        </div>
                                <?  }?>
                                 </div>
-                            </figcaption>
+                            </figcaption> -->
                         </figure>
                 <?  }
                 } ?>

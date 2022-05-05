@@ -97,7 +97,7 @@
             <div class="navigation">
                 <div class="navigation-container">
                     <div class="navigation-container__text">
-                        Куда поедите ?
+                        Куда поедете ?
                     </div>
                     <div class="navigation-item">
                         <div class="navigation-item__info navigation-item__info--select">Италия</div>
