@@ -10,7 +10,9 @@ p {
 ul {
     font-size: 18px;
 }
-h1 {
+h1,
+h2,
+h3 {
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 :root {

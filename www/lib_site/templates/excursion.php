@@ -102,10 +102,7 @@
                                         <div class="reviews-item__info-item">
                                             <div class="excursion-item__arrow-container">
                                                 <div class="excursion-item__arrow">
-                                                    <a>
-                                                        <div class="header-search-arrow1"></div>
-                                                        <div class="header-search-arrow2"></div>
-                                                    </a>   
+                                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
                                                 </div>
                                             </div> 
                                         </div>
@@ -131,10 +128,7 @@
                                         <div class="reviews-item__info-item">
                                             <div class="excursion-item__arrow-container">
                                                 <div class="excursion-item__arrow">
-                                                    <a>
-                                                        <div class="header-search-arrow1"></div>
-                                                        <div class="header-search-arrow2"></div>
-                                                    </a>   
+                                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
                                                 </div>
                                             </div> 
                                         </div>
@@ -160,10 +154,7 @@
                                         <div class="reviews-item__info-item">
                                             <div class="excursion-item__arrow-container">
                                                 <div class="excursion-item__arrow">
-                                                    <a>
-                                                        <div class="header-search-arrow1"></div>
-                                                        <div class="header-search-arrow2"></div>
-                                                    </a>   
+                                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
                                                 </div>
                                             </div> 
                                         </div>
