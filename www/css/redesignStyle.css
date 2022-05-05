@@ -48,22 +48,6 @@ h1 {
     text-decoration: none;
     color: #ffffff;
 }
-.header-search-arrow1 {
-    font-size: 20px;
-    width: 6px;
-    height: 1px;
-    background-color: #FFFFFF;
-    margin: 3px;
-    transform: rotate(45deg)
-}
-.header-search-arrow2 {
-    font-size: 20px;
-    width: 6px;
-    height: 1px;
-    background-color: #FFFFFF;
-    margin: 3px;
-    transform: rotate(-45deg)
-}
 
 
 .popular-excursions {
