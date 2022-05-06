@@ -19,12 +19,6 @@ h3 {
     --main-gren:#06ae8d;
     --main-blue:#3a5072;
 }
-.body-content {
-    background: url(/imgNew/img/mainBack.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
 .page-index .g-button {
     margin-bottom: 262px;
 }
@@ -55,8 +49,9 @@ h3 {
 
 .popular-excursions {
     background: url(/imgNew/img/backPopular.jpg);
-    background-position: center;
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .popular-excursions__container{
     display: flex;
@@ -104,7 +99,12 @@ h3 {
 }
 
 
-
+.page-index .body-content {
+    background: url(/imgNew/img/mainBack.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 .navigation {
     padding-top: 50px;
     padding-left: 30px;
