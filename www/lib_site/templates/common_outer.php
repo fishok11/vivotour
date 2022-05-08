@@ -124,11 +124,11 @@ ga('send', 'pageview');
                     <div class="feedback__container">                                
                         <div class="feedback__item">
                             <div class="feedback-item__stars">
-                                <span class="material-symbols-outlined material-symbols-outlined--color">star</span>
-                                <span class="material-symbols-outlined material-symbols-outlined--color">star</span>
-                                <span class="material-symbols-outlined material-symbols-outlined--color">star</span>
-                                <span class="material-symbols-outlined material-symbols-outlined--color">star</span>
-                                <span class="material-symbols-outlined ">star</span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="feedback-item__user">
                                 <span class="feedback-item__user-name">Ирина</span> про <span class="feedback-item__user-title">"Название экскурсии"</span>
@@ -151,11 +151,11 @@ ga('send', 'pageview');
 
                         <div class="feedback__item">
                             <div class="feedback-item__stars">
-                                <span class="material-symbols-outlined material-symbols-outlined--color">star</span>
-                                <span class="material-symbols-outlined material-symbols-outlined--color">star</span>
-                                <span class="material-symbols-outlined material-symbols-outlined--color">star</span>
-                                <span class="material-symbols-outlined material-symbols-outlined--color">star</span>
-                                <span class="material-symbols-outlined ">star</span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="feedback-item__user">
                                 <span class="feedback-item__user-name">Александр Сергеевич</span> про <span class="feedback-item__user-title">"Название экскурсии"</span>
