@@ -653,11 +653,13 @@ h3 {
 .location-text1 {
     margin: 0;
     font-weight: bold;
-    color: #FFFFFF
+    color: #FFFFFF;
+    font-size: 16px;
 }
 .location-text2 {
     margin: 0;
     color: #FFFFFF;
+    font-size: 16px;
 }
 
 
@@ -740,10 +742,10 @@ h3 {
 
 
 .background-feedback {
-    min-height: 1300px;
+    min-height: 1250px;
     height: calc(100vw * 0.77 + 130px);
     background-image: url("/imageNew/backgrounds_1920/feedback.jpg");
-    background-size:  100% auto;
+    background-size: 100% auto;
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -1146,8 +1148,8 @@ h3 {
 .footer-menu-list{
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    
+    padding: 18px;
+    margin: 0;
 }
 .footer-menu-item {
     list-style: none;
