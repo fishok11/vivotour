@@ -162,7 +162,7 @@
                                 </div>
 
                                 <div class="g-container-box home-button">
-                                    <a href="" class="g-button">Посмотреть все экскурсии</a>
+                                    <a href="" class="g-button">смотреть все отзывы</a>
                                 </div>
                             </div>
                         <!-- <?  foreach ($reviews as $review) { ?>

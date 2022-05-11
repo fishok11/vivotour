@@ -121,10 +121,10 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
                     <div class="details__item"><span class="details__item-title">Размер группы</span> до <?=$excursion['people_max']?> человек</div>
                     <div class="details__item"><span class="details__item-title">Дети</span> Можно с детьми</div>
                 <?  if ($excursion['extra_info4']) { ?>
-                        <div class="details__item"><div class="details__item-title">В стоимость включено</div><?=nl2br($excursion['extra_info4'])?></div>
+                        <div class="details__item"><span class="details__item-title">В стоимость включено</span><?=nl2br($excursion['extra_info4'])?></div>
                 <?  }
                     if ($excursion['extra_info5']) { ?>
-                        <div class="details__item"><div class="details__item-title">Не входит в стоимость</div><?=nl2br($excursion['extra_info5'])?></div>
+                        <div class="details__item"><span class="details__item-title">Не входит в стоимость</span><?=nl2br($excursion['extra_info5'])?></div>
                 <?  } ?>
                 </div>
                 <div class="details__price">
