@@ -115,10 +115,10 @@ ga('send', 'pageview');
                     <p class="feedback-subtitle">Что пишут о нас путешественники</p>
                 </div>
                 <div class="feedback-people">
-                    <a href="#"  class="feedback-arrow2">
+                    <div class="feedback-arrow1" role="button">
                         <div class="feedback-arrow1-top"></div>
                         <div class="feedback-arrow1-bottom"></div>
-                    </a>     
+                    </div>     
                     <div class="feedback__container">                                
                         <div class="feedback__item">
                             <div class="feedback-item__stars">
@@ -177,10 +177,10 @@ ga('send', 'pageview');
                     </div>
                     
                     <div>    
-                        <a href="#" class="feedback-arrow2">
+                        <div class="feedback-arrow2"  role="button">
                             <div class="feedback-arrow2-top"></div>
                             <div class="feedback-arrow2-bottom"></div>
-                        </a>
+                        </div>
                     </div>    
                 </div>       
             </div>          

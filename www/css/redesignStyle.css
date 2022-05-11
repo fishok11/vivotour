@@ -742,7 +742,7 @@ h3 {
 
 
 .background-feedback {
-    min-height: 1250px;
+    min-height: 1300px;
     height: calc(100vw * 0.77 + 130px);
     background-image: url("/imageNew/backgrounds_1920/feedback.jpg");
     background-size: 100% auto;
@@ -765,6 +765,7 @@ h3 {
 }
 .feedback-line {
     display: flex;
+    margin-bottom: 17px;
 }
 .feedback-line1 {
     width: 30px;
@@ -1016,6 +1017,10 @@ h3 {
     width: 15px;
     height: 20px;
 }
+.feedback-arrow1,
+.feedback-arrow2 {
+    cursor: pointer;
+}
 .feedback-arrow1-top {
     width: 13px;
     height: 2px;
@@ -1065,6 +1070,8 @@ h3 {
     top: 70%;
     left: 83%;
 }
+
+
 .description {
     width: auto;
     height: 538px;
@@ -1072,13 +1079,13 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: rgba(255,255,255,0.4);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .description-container {
     width: 1116px;
     height: 508px;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%);
-    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.65) 100%);
+    border-radius: 15px;
 }
 .description-title {
     width: 100%;
