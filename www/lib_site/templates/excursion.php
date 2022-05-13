@@ -75,6 +75,7 @@
                         <a name="reviews"></a>
                         <div class="reviews">
                             <h3>Отзывы об экскурсии</h3>
+
                             <div class="line">
                                 <div class="line-green"></div>
                                 <div class="line-red"></div>
@@ -83,7 +84,14 @@
                             <div class="reviews-text">Что о нас пишут путешественники</div>
 
                             <div class="reviews__container">
-                                <div class="reviews__item">
+
+                                <div class="reviews-container__arrow reviews-container__arrow--left">
+                                    <a href="">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                </div>
+
+                                <div class="reviews__item reviews__item--active">
                                     <div class="reviews-item__stars">
                                         <span class="star star--color"><i class="fa fa-star"></i></span>
                                         <span class="star star--color"><i class="fa fa-star"></i></span>
@@ -92,7 +100,7 @@
                                         <span class="star"><i class="fa fa-star"></i></span>
                                     </div>
                                     <div class="reviews-item__user">
-                                        <span class="reviews-item__user-name">Ирина</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
+                                        <span class="reviews-item__user-name">Ирина Сергеевна</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
                                     </div>
                                     <div class="reviews-item__info">
                                         Отличное знакомство с Римом. Очень знающий и приятный гид.
@@ -161,10 +169,17 @@
                                     </div>
                                 </div>
 
-                                <div class="g-container-box home-button">
-                                    <a href="" class="g-button">смотреть все отзывы</a>
+                                <div class="reviews-container__arrow reviews-container__arrow--right">
+                                    <a href="">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
                                 </div>
                             </div>
+
+                            <div class="g-container-box home-button">
+                                <a href="" class="g-button">смотреть все отзывы</a>
+                            </div>
+
                         <!-- <?  foreach ($reviews as $review) { ?>
                                 <div class="reviews-item">
                                     <div>

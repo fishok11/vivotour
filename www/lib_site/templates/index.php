@@ -48,18 +48,6 @@
                                 </div>
                             </div>  
                         </div>
-
-                        <div class="popular-excursion__arrow popular-excursion__arrow--left">
-                            <a href="">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                        </div>
-
-                        <div class="popular-excursion__arrow popular-excursion__arrow--right">
-                            <a href="">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </div>
                     </div>
 
                     <div class="popular-excursions__info-item">
@@ -90,6 +78,19 @@
                                 </div>
                             </div>  
                         </div>
+                    </div>
+
+                    
+                    <div class="popular-excursion__arrow popular-excursion__arrow-left">
+                        <a href="#">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    </div>
+
+                    <div class="popular-excursion__arrow popular-excursion__arrow-right">
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     </div>
                 </div>
                 
@@ -125,7 +126,7 @@
                         <div class="navigation-item__info--select">
                             <a href="">Италия</a>
                             <div class="arr-bottom">
-                                <img src="/imgNew/img/arrBottom.png" alt="">
+                                <i class="fa fa-angle-down"></i>
                             </div>
                         </div>
                         <div class="navigation-item__info"><a href="">Испания</a></div>
@@ -249,15 +250,21 @@
                                     </div>  
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="body-excursion__container-net-small">
-                            <div class="body-excursion__item-arrow body-excursion__item-arrow--left">
-                                <a href="">
+
+                            <div class="body-excursion__arrow body-excursion__arrow-left">
+                                <a href="#">
                                     <i class="fa fa-angle-left"></i>
                                 </a>
                             </div>
 
+                            <div class="body-excursion__arrow body-excursion__arrow-right">
+                                <a href="#">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="body-excursion__container-net-small">
                             <div class="body-excursion__item body-excursion__item--active">
                                 <div class="body-excursion__item-container">
                                     <div class="excursion-item__text">
@@ -312,12 +319,6 @@
                                         </div>
                                     </div>  
                                 </div>
-                            </div>
-
-                            <div class="body-excursion__item-arrow body-excursion__item-arrow--right">
-                                <a href="">
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
                             </div>
                         </div>    
                     </div>

@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 18px;
+    line-height: 1.5em;
 }
 p {
     font-size: 18px;
@@ -33,7 +34,7 @@ h3 {
 }
 .g-button {
     border-radius: 6px;
-    background: linear-gradient(1deg, #128f77, #7cc83d);
+    background: linear-gradient(0deg, #0fb087, #7cc83d);
     font-size: 16px;
     font-weight: bold;
     width: 286px;
@@ -45,6 +46,14 @@ h3 {
     align-items: center;
     text-decoration: none;
     color: #ffffff;
+    border-bottom: 2px solid #128f77;
+}
+
+
+.page-article h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--main-gren);
 }
 
 
@@ -338,6 +347,9 @@ h3 {
     width: 100%;
     margin-bottom: 30px;
 }
+.body-excursion__arrow {
+    display: none;
+}
 .body-excursion__container-net-big .body-excursion__item {
     max-width: 358px;
     width: 100%;
@@ -426,6 +438,8 @@ h3 {
 }
 .single {
     display: flex;
+    padding-bottom: 30px;
+    box-sizing: border-box;
 }
 .details {
     border: 1px solid var(--main-gren);
@@ -478,7 +492,7 @@ h3 {
     display: block;
     width: 100%;
     height: 2px;
-    background: var(--main-gren);
+    background: #84d7c7;
     margin-bottom: 20px;
 }
 .details__price .details__item {
@@ -510,7 +524,7 @@ h3 {
 }
 .guides-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .guides__title {
     text-align: center;
@@ -554,7 +568,7 @@ h3 {
 } */
 .text-content h3 {
     color: var(--main-gren);
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
 }
 .text-content ul {
@@ -591,7 +605,6 @@ h3 {
 } */
 .reviews-text {
     text-align: center;
-    font-size: 20px;
     margin-bottom: 35px;
     padding-bottom: 12px;
     border-bottom: 2px solid #e8e8e8;
@@ -600,6 +613,9 @@ h3 {
 .reviews__container {
     margin-bottom: 12px;
     width: 100%;
+}
+.reviews-container__arrow {
+    display: none;
 }
 .reviews__item {
     display: flex;
@@ -630,7 +646,7 @@ h3 {
     font-weight: bold;
 }
 .reviews-item__user-title {
-    color: var(--main-gren);
+    color: #5fcbb6;
 }
 .reviews-item__info {
     margin: 0 auto;
@@ -659,17 +675,27 @@ h3 {
 .crumbs__item a {
     color: var(--main-gren);
 }
-.crumbs__item--main {
+.crumbs__item--main a {
+    color: #128f77;
     font-weight: bold;
+}
+.crumbs__item--main::after {
+    content: '/';
+    color: var(--main-gren);
+    margin: 0 7px 0 10px;
+}
+.crumbs ul li:nth-child(2)::after {
+    content: '/';
+    color: #111111;
+    margin: 0 7px 0 10px;
+}
+.page-city .crumbs ul li:nth-child(2)::after {
+    display: none;
 }
 .crumbs__item--title {
     color: #111111;
 }
-.crumbs__item--title::before {
-    content: '/';
-    color: var(--main-gren);
-    margin: 0 5px 0 10px;
-}
+
 
 
 .page-booking .body-content {
@@ -708,13 +734,20 @@ h3 {
     font-size: 18px;
     font-family: Calibri, 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;
 }
+.order-form__item .mdl-textfield .mdl-textfield__input {
+    font-size: 18px;
+    font-family: Calibri, 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;
+}
 .order-form__item textarea {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
 }
 .order-form__text {
-    width: 500px;
-    margin-bottom: 30px;
-    margin-left: 15px;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    box-sizing: border-box;
     color: var(--main-blue);
 }
 .order-form__button-container {
@@ -740,10 +773,13 @@ h3 {
 .excursions__item-image {
     display: block;
     margin-bottom: 18px;
+    height: 213px;
 } 
 .excursions__item-image img {
     width: 100%;
-    height: 213px;
+    height: 100%; 
+    object-fit: cover; 
+    object-position: top; 
     border-radius: 8px;
 }
 .excursions__item-image-container {
@@ -786,6 +822,60 @@ h3 {
 }
 
 
+.page-guide .excursions {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.page-guide h1 {
+    font-size: 35px;
+    color: var(--main-blue);
+    margin: 15px 0;
+}
+.page-guide h2 {
+    font-size: 27px;
+    color: var(--main-blue);
+    margin: 0;
+}
+.page-guide .guide-index .guide__photo img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+.page-guide .guide-index { 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+.page-guide .guide-hero {
+    background-color: #f2f2f2;
+}
+.page-guide .guide-hero .guide-index {
+    display: flex;
+}
+.page-guide .guide-hero .guide-index .home-promo {
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.page-guide .single__body-title {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: var(--main-blue);
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.page-guide .single__body-main {
+    font-size: 21px;
+    color: #2d313f;
+    font-weight: lighter;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+}
 
 @media (max-width: 986px) {
     .g-container {
@@ -845,13 +935,17 @@ h3 {
     .arr-bottom {
         display: block;
         margin-left: 10px;
+        text-align: center;
         position: relative;
     }
-    .arr-bottom img {
+    .arr-bottom i {
+        color: #ffffff;
+        font-size: 15px;
         position: absolute;
-        bottom: 4px;
-        left: 2px;
+        top: -1px;
+        left: 1px;
     }
+
 
 
     .cities {
@@ -897,25 +991,116 @@ h3 {
         grid-template-columns: 1fr 1fr;
     }
 
+    
+    .body-excursion__container-net-small .excursion-item__text {
+        width: 155px;
+    }
+
 
     .page-excursion .single__body {
         margin-right: 30px;
     }
+
+
+    .page-city .excursions {
+        grid-template-columns: 1fr ;
+    }
+
+    .page-excursion .single {
+        flex-direction: column-reverse;
+    }
+    .page-excursion .single__body {
+        margin-right: 0;
+    }
+    .details {
+        padding: 25px 21px;
+        max-width: none;
+    }
+    .details__title {
+        font-size: 27px;
+    }
+    .details__item {
+        margin-bottom: 18px;
+    }
+    .guides-container {
+        margin-bottom: 30px;
+    }
+
+
+    .page-excursion .reviews .home-button {
+        display: none;
+    }
+    .reviews__item {
+        display: none;
+        border: none;
+    }
+    .reviews__item--active {
+        display: block;
+    }
+    .reviews-text {
+        border: none;
+        padding: 0;
+    }
+    .reviews__container {
+        display: flex;
+        align-items: center;
+    }
+    .reviews__container .home-button {
+        flex: none;
+    }
+    .reviews-container__arrow {
+        display: block;
+        font-size: 35px;
+    }
+    .reviews-container__arrow a {
+        color: var(--main-gren);
+    }
+    .reviews-container__arrow--left {
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    .reviews-container__arrow--right {
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+
+    .page-booking .single {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-container {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .order {
+        width: 100%;
+    }
+    .order__form {
+        padding-left: 5px;
+        box-sizing: border-box;
+    }
+    .order-form__text {
+        max-width: none;
+    }
+
+
+    .page-guide .excursions {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
 @media (max-width: 600px) {
     .g-container {
         padding: 0 12px;
-        box-sizing: border-box;
     }
     .popular-excursions__head {
-        font-size: 28px;
+        font-size: 8vw;
     }
-    .popular-excursions__info-item {
-        display: none;
-    }
-    .popular-excursions__info-item--active {
-        display: block;
+    .popular-excursions__info {
         position: relative;
+        overflow: hidden;
     }
     .popular-excursion__arrow {
         display: block;
@@ -929,7 +1114,7 @@ h3 {
         display: block;
         color: #ffffff;
     }
-    .popular-excursion__arrow--left {
+    .popular-excursion__arrow-left {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -937,7 +1122,7 @@ h3 {
         left: -15px;
         top: 30%;
     }
-    .popular-excursion__arrow--right {
+    .popular-excursion__arrow-right {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -945,11 +1130,16 @@ h3 {
         right: -15px;
         top: 30%;
     }
+    .popular-excursions__info-item {
+        display: none;
+    }
+    .popular-excursions__info-item--active {
+        display: block;
+    }
     .popular-excursions__info-img {
         max-width: max-content;
         height: auto;
     }
-
 
 
     .navigation {
@@ -959,7 +1149,7 @@ h3 {
         margin-bottom: 0;
     }
     .navigation-container__text p {
-        font-size: 28px;
+        font-size: 7vw;
         margin-bottom: 0;
     }
     .navigation-item {
@@ -988,7 +1178,7 @@ h3 {
         box-sizing: border-box;
     }
     .body-info__container-head {
-        font-size: 28px;
+        font-size: 8vw;
     }
     .body-info__container-text {
         flex-direction: column;
@@ -1007,95 +1197,113 @@ h3 {
         margin-bottom: 60px;
     }
 
+
     .body-excursion {
         padding-bottom: 30px;
     }
     .body-excursion__text {
-        font-size: 28px;
+        font-size: 8vw;
         color: var(--main-gren);
     }
     .body-excursion__container-net-big .body-excursion__item {
-        max-width: 455px;
+        max-width: none;
         width: 100%;
-        height: 200px;
-        margin: 0 auto;
-    }
-    .body-excursion__container-net-small .body-excursion__item {
-        max-width: 165px;
-        min-width: 142px;
-        width: 100%;
-        height: 115px;
+        height: 225px;
         margin: 0 auto;
     }
     .body-excursion__container-net-big {
         margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+    .body-excursion__arrow {
+        display: block;
+        font-size: 40px;
+        width: 55px;
+        height: 55px;
+        background-color: #ffffff38;
+        border-radius: 50%;
+    }
+    .body-excursion__arrow a {
+        color: #ffffff;
+    }
+    .body-excursion__arrow-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -15px;
+        top: 35%;
+    }
+    .body-excursion__arrow-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -15px;
+        top: 35%;
     }
     .body-excursion__container-net-small {
-        align-items: center;
-        position: relative;
-    }
-    .body-excursion__container-net-small .excursion-text__head {
-        font-size: 12px;
-    }
-    .body-excursion__container-net-small .excursion-text__info {
-        font-size: 10px;
-    }
-    .body-excursion__container-net-small .body-excursion__item-container {
-        padding: 10px 7px 10px 10px;
+        display: none;
     }
     .body-excursion__item{
         display: none;
     }
     .body-excursion__item--active {
         display: block;
-        position: relative;
     }    
     .body-excursion__container .body-excursion__item-container {
         position: absolute;
         bottom: 0;
     }
-    .body-excursion__item-arrow {
-        display: block;
-        font-size: 35px;
-        z-index: 3;
+
+
+    .page-excursion .details .g-button {
+        max-width: 286px;
+        width: 100%;
     }
-    .body-excursion__item-arrow a {
-        display: block;
-        color: #ffffff;
+
+    .crumbs ul {
+        display: flex;
+        justify-content: center;
+    } 
+
+
+    .page-booking .single {
+        flex-direction: column;
+        align-items: center;
     }
-    .body-excursion__item-arrow a i {
-        text-shadow: 0px 0px 14px #ffffff;
+    .page-booking h1 {
+        font-size: 30px;
+        text-align: center;
     }
-    .body-excursion__item-arrow--left{
-        position: absolute;
-        left: -10px;
+    .order-form__item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .body-excursion__item-arrow--right{
-        position: absolute;
-        right: -10px;
+    .order-form__item .mdl-textfield {
+        margin-left: 0;
+    }
+    .order-form__text {
+        padding-left: 0;
     }
 
 
-    .page-city .excursions {
-        grid-template-columns: 1fr ;
+    .page-guide .excursions {
+        grid-template-columns: 1fr;
     }
+    .page-guide h2 {
+        font-size: 7vw;
+        color: var(--main-blue);
+        margin: 10px 0;
+    }
+    .page-guide .guide-hero .guide-index {
+        flex-direction: column;
+    }
+    .page-guide .guide-hero .guide-index .home-promo {
+        padding-left: 0;
 
-    .page-excursion .single {
-        flex-direction: column-reverse;
-    }
-    .page-excursion .single__body {
-        margin-right: 0;
-    }
-    .details {
-        padding: 25px 21px;
-    }
-    .details__title {
-        font-size: 25px;
-    }
-    .details__item {
-        margin-bottom: 18px;
-    }
-    .guides-container {
-        margin-bottom: 30px;
     }
 }

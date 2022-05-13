@@ -115,8 +115,8 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
             <aside class="details">
                 <div class="details__items">
                     <div class="details__title">
-										    <?=get_title_by_tag($tag_id, 0, $excursion['type_id_lookup'])?>	
-										</div>
+						<?=get_title_by_tag($tag_id, 0, $excursion['type_id_lookup'])?>	
+					</div>
                     <div class="details__item"><span class="details__item-title">Длительность</span> <?=out_duration($excursion['duration'])?></div>
                     <div class="details__item"><span class="details__item-title">Размер группы</span> до <?=$excursion['people_max']?> человек</div>
                     <div class="details__item"><span class="details__item-title">Дети</span> Можно с детьми</div>
@@ -267,7 +267,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 		           	</div>
 	           	</div>
         <?  } else { ?>
-            <div>
+            <div class="order-container">
             <?	if ($booking_error) { ?>
 	            	<div class="g-error">
 	            		<?=$booking_error?>
