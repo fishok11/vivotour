@@ -89,9 +89,13 @@ h3 {
 }
 .popular-excursions__info {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 42px;
+}
+.popular-excursions__info-item {
+    
 }
 .popular-excursions__info-img {
     max-width: 330px;
@@ -100,12 +104,18 @@ h3 {
     border-radius: 8px;
     margin-bottom: 20px;
 }
+.popular-excursions .body-excursion__item-container {
+    max-width: 330px;
+    width: 100%;
+}
 .popular-excursions .g-button {
     width: 286px;
     margin-bottom: 130px;
 }
 .popular-excursions .excursion-text__head {
     color: var(--main-blue);
+    max-width: 250px;
+    width: 100%;
 }
 .popular-excursions .excursion-text__info {
     color: var(--main-blue);
@@ -250,6 +260,7 @@ h3 {
     color: var(--main-blue);
     font-weight: bold;
     text-align: left;
+    text-decoration: none;
 }
 .cities__item-info::before {
     display: block;
@@ -332,32 +343,39 @@ h3 {
     align-items: center;
     padding-bottom: 70px;
 }
-.body-excursion__text{
+.body-excursion__text {
     font-size: 36px;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 25px;
+    max-width: 250px;
+    width: 100%;
 }
 .body-excursion__container{
     width: 100%;
 }
-.body-excursion__container-net-big {
-    display: flex;
-    justify-content: space-between;
+.body-excursion__container-net-big{
     width: 100%;
     margin-bottom: 30px;
 }
+/* .body-excursion__slides {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+} */
 .body-excursion__arrow {
     display: none;
+    text-decoration: none;
+    color: #ffffff;
 }
 .body-excursion__container-net-big .body-excursion__item {
-    max-width: 358px;
     width: 100%;
     height: 212px;
 }
 .body-excursion__container-net-small {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
     width: 100%;
 }
 .body-excursion__container-net-small .body-excursion__item {
@@ -395,14 +413,16 @@ h3 {
 .body-excursion__item-arrow {
     display: none;
 }
-
-
 .excursion-item__text{
     color: #ffffff;
 }
 .excursion-text__head {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
     font-size: 20px;
     font-weight: bold;
+    
 }
 .excursion-text__info {
     font-weight: lighter;
@@ -432,6 +452,7 @@ h3 {
     align-items: center;
     height: 10px;
 }
+
 
 .page-excursion .body-content {
     background: #ffffff;
@@ -480,6 +501,9 @@ h3 {
     font-weight: bold;
     width: 120px;
     margin-right: 45px;
+}
+.details__reviews-avg {
+    color: var(--main-gren);
 }
 /* .g-anchor {
 } */
@@ -616,6 +640,7 @@ h3 {
 }
 .reviews-container__arrow {
     display: none;
+    z-index: 10;
 }
 .reviews__item {
     display: flex;
@@ -864,7 +889,6 @@ h3 {
 .page-guide .single__body-title {
     font-weight: bold;
     font-size: 30px;
-    text-align: center;
     color: var(--main-blue);
     padding: 10px 0;
     box-sizing: border-box;
@@ -876,7 +900,12 @@ h3 {
     padding-bottom: 24px;
     box-sizing: border-box;
 }
-
+@media (max-width: 1147px) {
+    .g-container {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
 @media (max-width: 986px) {
     .g-container {
         max-width: 800px;
@@ -887,9 +916,10 @@ h3 {
 
 
     .popular-excursions__info {
-        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
     }
-    div.popular-excursions__info div.popular-excursions__info-item:nth-child(3) {
+    div.popular-excursions__info .popular-excursions__info-item.popular-excursions__info-item:nth-child(3) {
         display: none;
     }
     .popular-excursions__info-img {
@@ -976,11 +1006,16 @@ h3 {
         width: 100%;
     }
 
-
-    div.body-excursion__container-net-big div:nth-child(3) {
-        display: none;
+    /* .body-excursion__container-net-big {  
+    } */
+    /* .body-excursion__slides {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+    .body-excursion__container-net-small {
+        grid-template-columns: repeat(3, 1fr);
     }
-    div.body-excursion__container-net-small div:nth-child(4) {
+
+    div.body-excursion__container-net-small .body-excursion__item:nth-child(4) {
         display: none;
     }
     .body-excursion__container-net-small .body-excursion__item {
@@ -988,7 +1023,8 @@ h3 {
         height: 190px;
     }
     .body-excursion__container-net-small .excursion-item__text {
-        width: 155px;
+        max-width: 155px;
+        width: 100%;
     }
     .body-excursion__container-net-small .excursion-text__head {
         font-size: 18px;
@@ -1026,19 +1062,14 @@ h3 {
         display: none;
     }
     .reviews__item {
-        display: none;
         border: none;
-    }
-    .reviews__item--active {
-        display: block;
     }
     .reviews-text {
         border: none;
         padding: 0;
     }
     .reviews__container {
-        display: flex;
-        align-items: center;
+        position: relative;
     }
     .reviews__container .home-button {
         flex: none;
@@ -1050,13 +1081,19 @@ h3 {
     .reviews-container__arrow a {
         color: var(--main-gren);
     }
-    .reviews-container__arrow--left {
+    .reviews-container__arrow-left {
         padding-right: 10px;
         box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 40%;
     }
-    .reviews-container__arrow--right {
+    .reviews-container__arrow-right {
         padding-left: 10px;
         box-sizing: border-box;
+        position: absolute;
+        right: 0;
+        top: 40%;
     }
 
 
@@ -1093,6 +1130,7 @@ h3 {
         font-size: 8vw;
     }
     .popular-excursions__info {
+        grid-template-columns: repeat(1, 1fr);
         position: relative;
         overflow: hidden;
     }
@@ -1103,6 +1141,7 @@ h3 {
         height: 55px;
         background-color: #ffffff38;
         border-radius: 50%;
+        z-index: 10;
     }
     .popular-excursion__arrow a {
         display: block;
@@ -1124,11 +1163,11 @@ h3 {
         right: -15px;
         top: 30%;
     }
-    .popular-excursions__info-item {
-        display: none;
-    }
-    .popular-excursions__info-item--active {
+    div.popular-excursions__info .popular-excursions__info-item.popular-excursions__info-item:nth-child(3) {
         display: block;
+    }
+    .popular-excursions__info-item {
+        
     }
     .popular-excursions__info-img {
         max-width: max-content;
@@ -1210,6 +1249,10 @@ h3 {
         position: relative;
         overflow: hidden;
     }
+    /* .body-excursion__slides {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    } */
     .body-excursion__arrow {
         display: block;
         font-size: 40px;
@@ -1217,6 +1260,7 @@ h3 {
         height: 55px;
         background-color: #ffffff38;
         border-radius: 50%;
+        z-index: 10;
     }
     .body-excursion__arrow a {
         color: #ffffff;
@@ -1240,12 +1284,6 @@ h3 {
     .body-excursion__container-net-small {
         display: none;
     }
-    .body-excursion__item{
-        display: none;
-    }
-    .body-excursion__item--active {
-        display: block;
-    }    
     .body-excursion__container .body-excursion__item-container {
         position: absolute;
         bottom: 0;

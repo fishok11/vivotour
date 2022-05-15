@@ -28,8 +28,12 @@
     <link href="/fonts/font-awesome.min.css" rel="stylesheet">
 	
     <link href="/css/redesignStyle.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
-	
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 	<script src="/js/jquery-1.11.1.min.js"></script>
 	<script src="/js/jquery.easing.js"></script>
@@ -148,5 +152,6 @@ ga('send', 'pageview');
 })(document, window, "yandex_metrika_callbacks");
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/30196819" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script src="/js/script-new.js"></script>
 </body>
 </html>

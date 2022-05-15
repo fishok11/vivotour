@@ -84,92 +84,93 @@
                             <div class="reviews-text">Что о нас пишут путешественники</div>
 
                             <div class="reviews__container">
+                                <div class="reviews__container-slides swiper-wrapper"> 
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews-item__stars">
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star"><i class="fa fa-star"></i></span>
+                                        </div>
+                                        <div class="reviews-item__user">
+                                            <span class="reviews-item__user-name">Ирина Сергеевна</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
+                                        </div>
+                                        <div class="reviews-item__info">
+                                            Отличное знакомство с Римом. Очень знающий и приятный гид.
+                                            Формат небольшой группы позволял задавать много вопросов.
+                                            Маргарита явно увлечена Римом и его историей. 
+                                            
+                                            <div class="reviews-item__info-item">
+                                                <div class="excursion-item__arrow-container">
+                                                    <div class="excursion-item__arrow">
+                                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                <div class="reviews-container__arrow reviews-container__arrow--left">
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews-item__stars">
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star"><i class="fa fa-star"></i></span>
+                                        </div>
+                                        <div class="reviews-item__user">
+                                            <span class="reviews-item__user-name">Ирина</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
+                                        </div>
+                                        <div class="reviews-item__info">
+                                            Отличное знакомство с Римом. Очень знающий и приятный гид.
+                                            Формат небольшой группы позволял задавать много вопросов.
+                                            Маргарита явно увлечена Римом и его историей. 
+
+                                            <div class="reviews-item__info-item">
+                                                <div class="excursion-item__arrow-container">
+                                                    <div class="excursion-item__arrow">
+                                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews-item__stars">
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star star--color"><i class="fa fa-star"></i></span>
+                                            <span class="star"><i class="fa fa-star"></i></span>
+                                        </div>
+                                        <div class="reviews-item__user">
+                                            <span class="reviews-item__user-name">Ирина</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
+                                        </div>
+                                        <div class="reviews-item__info">
+                                            Отличное знакомство с Римом. Очень знающий и приятный гид.
+                                            Формат небольшой группы позволял задавать много вопросов.
+                                            Маргарита явно увлечена Римом и его историей. 
+
+                                            <div class="reviews-item__info-item">
+                                                <div class="excursion-item__arrow-container">
+                                                    <div class="excursion-item__arrow">
+                                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-container__arrow reviews-container__arrow-left">
                                     <a href="">
                                         <i class="fa fa-angle-left"></i>
                                     </a>
                                 </div>
 
-                                <div class="reviews__item reviews__item--active">
-                                    <div class="reviews-item__stars">
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star"><i class="fa fa-star"></i></span>
-                                    </div>
-                                    <div class="reviews-item__user">
-                                        <span class="reviews-item__user-name">Ирина Сергеевна</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
-                                    </div>
-                                    <div class="reviews-item__info">
-                                        Отличное знакомство с Римом. Очень знающий и приятный гид.
-                                        Формат небольшой группы позволял задавать много вопросов.
-                                        Маргарита явно увлечена Римом и его историей. 
-                                        
-                                        <div class="reviews-item__info-item">
-                                            <div class="excursion-item__arrow-container">
-                                                <div class="excursion-item__arrow">
-                                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="reviews__item">
-                                    <div class="reviews-item__stars">
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star"><i class="fa fa-star"></i></span>
-                                    </div>
-                                    <div class="reviews-item__user">
-                                        <span class="reviews-item__user-name">Ирина</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
-                                    </div>
-                                    <div class="reviews-item__info">
-                                        Отличное знакомство с Римом. Очень знающий и приятный гид.
-                                        Формат небольшой группы позволял задавать много вопросов.
-                                        Маргарита явно увлечена Римом и его историей. 
-
-                                        <div class="reviews-item__info-item">
-                                            <div class="excursion-item__arrow-container">
-                                                <div class="excursion-item__arrow">
-                                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="reviews__item">
-                                    <div class="reviews-item__stars">
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star star--color"><i class="fa fa-star"></i></span>
-                                        <span class="star"><i class="fa fa-star"></i></span>
-                                    </div>
-                                    <div class="reviews-item__user">
-                                        <span class="reviews-item__user-name">Ирина</span> про <span class="reviews-item__user-title">"Название экскурсии"</span>
-                                    </div>
-                                    <div class="reviews-item__info">
-                                        Отличное знакомство с Римом. Очень знающий и приятный гид.
-                                        Формат небольшой группы позволял задавать много вопросов.
-                                        Маргарита явно увлечена Римом и его историей. 
-
-                                        <div class="reviews-item__info-item">
-                                            <div class="excursion-item__arrow-container">
-                                                <div class="excursion-item__arrow">
-                                                    <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="reviews-container__arrow reviews-container__arrow--right">
+                                <div class="reviews-container__arrow reviews-container__arrow-right">
                                     <a href="">
                                         <i class="fa fa-angle-right"></i>
                                     </a>
@@ -215,7 +216,7 @@
                             if ($reviews_count) { ?>
                                 <div class="details__item"><div class="details__item-title">Рейтинг</div>
                                 <?  out_stars($reviews_avg) ?>
-                                    <?=$reviews_avg?>
+                                    <span class="details__reviews-avg">(<?=$reviews_avg?>)</span>
                                     <!-- <a href="#reviews" class="g-anchor">по <?=$reviews_count?> отзыв<?=1 == $reviews_count ? 'у' : 'ам'?></a> -->
                                 </div>
                         <?  }
