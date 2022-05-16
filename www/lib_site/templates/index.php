@@ -80,9 +80,37 @@
                                 </div>  
                             </div>
                         </div>
-                    </div>
- 
 
+                        <div class="popular-excursions__info-item swiper-slide">
+                            <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            <div class="body-excursion__item-container">
+                                <div class="excursion-item__text">
+                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <div class="excursion-text__info">1 час</div>
+                                </div>
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div class="popular-excursions__info-item swiper-slide">
+                            <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            <div class="body-excursion__item-container">
+                                <div class="excursion-item__text">
+                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <div class="excursion-text__info">1 час</div>
+                                </div>
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="popular-excursion__arrow popular-excursion__arrow-left">
                         <a href="#">
@@ -254,6 +282,34 @@
                                         </div>  
                                     </div>
                                 </div> 
+
+                                <div class="body-excursion__item swiper-slide">
+                                    <div class="body-excursion__item-container">
+                                        <div class="excursion-item__text">
+                                            <a href="" class="excursion-text__head">Название экскурсии</a>
+                                            <div class="excursion-text__info">1 час</div>
+                                        </div>
+                                        <div class="excursion-item__arrow-container">
+                                            <div class="excursion-item__arrow">
+                                                <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div> 
+
+                                <div class="body-excursion__item swiper-slide">
+                                    <div class="body-excursion__item-container">
+                                        <div class="excursion-item__text">
+                                            <a href="" class="excursion-text__head">Название экскурсии</a>
+                                            <div class="excursion-text__info">1 час</div>
+                                        </div>
+                                        <div class="excursion-item__arrow-container">
+                                            <div class="excursion-item__arrow">
+                                                <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div> 
                             </div>      
 
                             <a href="#" class="body-excursion__arrow body-excursion__arrow-left">
@@ -265,7 +321,7 @@
                             </a>
                         </div>
                         
-                        <div class="body-excursion__container-net-small">
+                        <!-- <div class="body-excursion__container-net-small">
                             <div class="body-excursion__item body-excursion__item--active">
                                 <div class="body-excursion__item-container">
                                     <div class="excursion-item__text">
@@ -321,7 +377,7 @@
                                     </div>  
                                 </div>
                             </div>
-                        </div>    
+                        </div>     -->
                     </div>
                 </div>
             </div>
