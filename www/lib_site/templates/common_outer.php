@@ -50,63 +50,88 @@ ga('send', 'pageview');
 </head>
 <body class="page-<?=$_SITE['section_type']?>">
 
-	<header class="header"> 
-        <div class="g-container">
-            <div class="header-top">
-                <div >
-                    <a class="header-logo" href="/">VIVO tour</a>
+	<header class="header">
+        <a href="#" class="header-burger-link">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <nav class="header-burger-menu">
+            <a href="" class="header-burger-menu-arrow">
+                <i class="fa-solid fa-bars"></i>
+            </a> 
+            <ul class="header-burger-menu-list">      
+                <li class="header-burger-menu-item">
+                    <a href="" class="header-burger-menu-link">Как это работает?</a>
+                </li>
+                <li class="header-burger-menu-item">
+                    <a href="" class="header-burger-menu-link">Как это работает?</a>
+                </li>
+                <li class="header-burger-menu-item">
+                    <a href="" class="header-burger-menu-link">Как это работает?</a>
+                </li>
+                <li class="header-burger-menu-item">
+                    <a href="" class="header-burger-menu-link">Как это работает?</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-container">    
+            <div class="g-container"> 
+                <div class="header-top">
+                    
+                    <div class="header-logo">
+                        <a class="header-logo-link" href="/">VIVO tour</a>
+                    </div>
+                    <?  if (!empty($_SITE['menu']['main'])) { ?>
+                    <nav class="header-menu g-clearfix">
+                        <ul>
+                        <?	foreach ($_SITE['menu']['main'] as $id => $menu_item) { ?>
+                                <li class="header-menu-item<? /*=!empty($menu_item['submenu'])?' w-submenu':''*/?>">
+                                    <a href="<?=$menu_item['url']?>"><?=$menu_item['title']?></a>
+                                <?	/*if (isset($menu_item['submenu'])) { ?>
+                                    <div class="header-menu-submenu">
+                                        <ul>
+                                            <?	foreach ($menu_item['submenu'] as $id => &$submenu_item) { ?>
+                                                <li><a href="<?=$submenu_item['url']?>"<?=$submenu_item['target_blank']?' target="_blank"':''?>><?=$submenu_item['title']?></a></li>
+                                            <?	} ?>
+                                        </ul>
+                                    </div>
+                                <?	} */?>
+                                </li>
+                        <?	} ?>
+                        </ul>
+                    </nav>
+                    <?  } ?>  
                 </div>
-                <?  if (!empty($_SITE['menu']['main'])) { ?>
-                <nav class="header-menu g-clearfix">
-                    <ul>
-                    <?	foreach ($_SITE['menu']['main'] as $id => $menu_item) { ?>
-                            <li class="header-menu-item<? /*=!empty($menu_item['submenu'])?' w-submenu':''*/?>">
-                                <a href="<?=$menu_item['url']?>"><?=$menu_item['title']?></a>
-                            <?	/*if (isset($menu_item['submenu'])) { ?>
-                                <div class="header-menu-submenu">
-                                    <ul>
-                                        <?	foreach ($menu_item['submenu'] as $id => &$submenu_item) { ?>
-                                            <li><a href="<?=$submenu_item['url']?>"<?=$submenu_item['target_blank']?' target="_blank"':''?>><?=$submenu_item['title']?></a></li>
-                                        <?	} ?>
-                                    </ul>
-                                </div>
-                            <?	} */?>
-                            </li>
-                    <?	} ?>
-                    </ul>
-                </nav>
-                <?  } ?>  
-            </div>
-            <div class="header-middle">
-                <div class="header-middle-container">
-                    <p class="header-middle-textTop">увлектаелные экскурсии</p>
-                    <p class="header-middle-textMiddle">ПО ИТАЛИИ И ЕВРОПЕ</p>
-                    <p class="header-middle-textBottom">60 городов и направлений</p>
-                </div>    
-            </div>
-            <div class="header-location">
-                <i class="location-map fa-solid fa-location-dot"></i>
-                <p class="location-text1">Монумент Витториано</p>
-                <p class="location-text2">Рим</p>
-            </div>
-            <div class="header-search"> 
-                <div class="header-search-container">  
-                    <form class="header-search-form">
-                        <input class="header-search-input" type="text" placeholder="Название города или достопримечательности">
-                        <button class="header-search-button" type="submit">найти
-                            <div class="header-search-arrow">
-                                <div class="header-search-arrow1"></div>
-                                <div class="header-search-arrow2"></div>
-                            </div>   
-                        </button>
-                    </form>
-                </div>           
+                <div class="header-middle">
+                    <div class="header-middle-container">
+                        <p class="header-middle-textTop">увлектаелные экскурсии</p>
+                        <p class="header-middle-textMiddle">ПО ИТАЛИИ И ЕВРОПЕ</p>
+                        <p class="header-middle-textBottom">60 городов и направлений</p>
+                    </div>    
+                </div>
+                <div class="header-location">
+                    <i class="location-map fa-solid fa-location-dot"></i>
+                    <p class="location-text1">Монумент Витториано</p>
+                    <p class="location-text2">Рим</p>
+                </div>
+                <div class="header-search"> 
+                    <div class="header-search-container">  
+                        <form class="header-search-form">
+                            <input class="header-search-input" type="text" placeholder="Название города">
+                            <button class="header-search-button" type="submit">найти
+                                <div class="header-search-arrow">
+                                    <div class="header-search-arrow1"></div>
+                                    <div class="header-search-arrow2"></div>
+                                </div>   
+                            </button>
+                        </form>
+                    </div>           
+                </div>
             </div>
         </div>
     </header>
 
 
-   	<?=$__CMS__INNER_TEMPLATE_CONTENTS?>
+   	 <?=$__CMS__INNER_TEMPLATE_CONTENTS?>
 
 
     <div class="background-feedback">
@@ -126,68 +151,43 @@ ga('send', 'pageview');
                         <div class="feedback-arrow1-bottom"></div>
                     </div>     
                     <div class="feedback__container">                                
-                        <div class="feedback__item">
+                        <div class="feedback__item feedback-item--active">
                             <div class="feedback-item__stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star"></i>
                             </div>
                             <div class="feedback-item__user">
                                 <span class="feedback-item__user-name">Ирина</span> про <span class="feedback-item__user-title">"Название экскурсии"</span>
                             </div>
                             <div class="feedback-item__info">
-                                Я бронировала экскурсию в сервисе по колизею, мы были</br> вдвоем с дочкой 6 лет. Мне очень понравилось, как гид </br>Евгений, провел экскурсию не скучно, с юмором, все было </br>понятно и очень познавательно...
-
-                                <div class="feedback-item__info-item">
-                                    <div class="feedback-item__arrow-container">
-                                        <div class="feedback-item__arrow">
-                                            <a>
-                                                <div class="header-search-arrow1"></div>
-                                                <div class="header-search-arrow2"></div>
-                                            </a>   
-                                        </div>
-                                    </div> 
-                                </div>
+                                Я бронировала экскурсию в сервисе по колизею, мы были вдвоем с дочкой 6 лет. Мне очень понравилось, как гид Евгений, провел экскурсию не скучно, с юмором, все было понятно и очень познавательно... 
                             </div>
                         </div>
 
                         <div class="feedback__item">
                             <div class="feedback-item__stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star"></i>
                             </div>
                             <div class="feedback-item__user">
                                 <span class="feedback-item__user-name">Александр Сергеевич</span> про <span class="feedback-item__user-title">"Название экскурсии"</span>
                             </div>
                             <div class="feedback-item__info">
-                            Я бронировала экскурсию в сервисе по колизею, мы были</br> вдвоем с дочкой 6 лет. Мне очень понравилось, как гид </br>Евгений, провел экскурсию не скучно, с юмором, все было </br>понятно и очень познавательно... 
-
-                                <div class="feedback-item__info-item">
-                                    <div class="feedback-item__arrow-container">
-                                        <div class="feedback-item__arrow">
-                                            <a>
-                                                <div class="header-search-arrow1"></div>
-                                                <div class="header-search-arrow2"></div>
-                                            </a>   
-                                        </div>
-                                    </div> 
-                                </div>
+                                Я бронировала экскурсию в сервисе по колизею, мы были вдвоем с дочкой 6 лет. Мне очень понравилось, как гид Евгений, провел экскурсию не скучно, с юмором, все было понятно и очень познавательно... 
                             </div>
                         </div>
-
+                    </div>   
+                    <div class="feedback-arrow2"  role="button">
+                        <div class="feedback-arrow2-top"></div>
+                        <div class="feedback-arrow2-bottom"></div>
                     </div>
-                    
-                    <div>    
-                        <div class="feedback-arrow2"  role="button">
-                            <div class="feedback-arrow2-top"></div>
-                            <div class="feedback-arrow2-bottom"></div>
-                        </div>
-                    </div>    
+                        
                 </div>       
             </div>          
         </div>
@@ -214,15 +214,43 @@ ga('send', 'pageview');
                         </div>
                     </div>
                     <div class="description-text">
-                        <div class="description-text-left">
-                            <p>Наш сеервис - это совместный проект содружества </br>профессиональных гидов и путешественников.</p>
-                            <p>Мы твердо убеждены, что разнообразие - это ключ к лучшему </br>пониманию потребностей наших искушенных </br>путешественников, следователно , к лучшему пониманию их </br>желаний. Именно по этому мы объеденили самых энергичных </br>и увлеченных профессионалов из разных регионв Италии </br>и Европы.</p>
-                            <p>Мы предоставляем интернет-платформу, позволяющюю </br>выбрать и  воспользоваться лучшими экскурсионными </br>предложениями по достопримечательностям Италии и Европы.</p>
+                        <div>
+                            <p class="description-text-left">
+                                Наш сервис - это совместный проект содружества </br>
+                                профессиональных гидов и путешественников.
+                            </p>
+                            <p class="description-text-left">
+                                Мы твердо убеждены, что разнообразие - это ключ к лучшему </br>
+                                пониманию потребностей наших искушенных </br>
+                                путешественников, следователно , к лучшему пониманию их </br>
+                                желаний. Именно по этому мы объеденили самых энергичных </br>
+                                и увлеченных профессионалов из разных регионв Италии </br>
+                                и Европы.
+                            </p>
+                            <p class="description-text-left">
+                                Мы предоставляем интернет-платформу, позволяющюю </br>
+                                выбрать и  воспользоваться лучшими экскурсионными </br>
+                                предложениями по достопримечательностям Италии и Европы.
+                            </p>
                         </div>
-                        <div class="description-text-right">
-                            <p>Наша компания дает вам возможность увидеть </br>самые популярные и уникальные места и </br>побывать на необычных экскурсиях в лучших </br>регионах европейских стран.</p>
-                            <p>Вы можете написать на по адресу </br><span class="description-text-border">support@vivotour.ru,</span> </br>а с 9:00 до 18:00 по московскому времени - </br>позвонить по телефону<span class="description-number">+7 (495) 991-07-55.</span></p>
-                            <p>Подробная контактная </br>информация и доступные </br>способы связи </br><span class="description-text-border">размещены здесь</span>.</p>
+                        <div>
+                            <p class="description-text-right">
+                                Наша компания дает вам возможность увидеть </br>
+                                самые популярные и уникальные места и </br>
+                                побывать на необычных экскурсиях в лучших </br>
+                                регионах европейских стран.
+                            </p>
+                            <p class="description-text-right">
+                                Вы можете написать на по адресу </br>
+                                <span class="description-text-border">support@vivotour.ru,</span> </br>
+                                а с 9:00 до 18:00 по московскому времени - </br>
+                                позвонить по телефону<span class="description-number">+7 (495) 991-07-55.</span>
+                            </p>
+                            <p class="description-text-right">Подробная контактная </br>
+                            информация и доступные </br>
+                            способы связи </br>
+                            <span class="description-text-border">размещены здесь.</span>
+                        </p>
                         </div>
                     </div>    
                 </div>    
@@ -261,13 +289,11 @@ ga('send', 'pageview');
                 </div>
                 <div class="footer-contacts-mailing">
                     <p class="footer-contacts-chat-text1">Узнайте первым о скидках и акциях</p>
-                    <div>
-                        <form class="footer-contacts-mailing-form">
-                            <input class="footer-contacts-mailing-input" type="text" placeholder="Ваш email">
-                            <button class="footer-contacts-mailing-button" type="submit">подписаться</button>
-                        </form>
-                    </div>
-                    <p class="footer-contacts-mailing-text">Нажимая кнопку Пописаться, вы соглашаетесь </br>с политикой <span class="footer-description-text-border">персональных данных</span></p>
+                    <form class="footer-contacts-mailing-form">
+                        <input class="footer-contacts-mailing-input" type="text" placeholder="Ваш email">
+                        <button class="footer-contacts-mailing-button" type="submit">подписаться</button>
+                    </form> 
+                    <p class="footer-contacts-mailing-text">Нажимая кнопку Пописаться, вы соглашаетесь </br>с политикой <span class="description-text-border">персональных данных</span></p>
                 </div>
                 <div class="footer-contacts-icons">
                     <a href="#" class="footer-contacts-icons-logo"></a>
@@ -281,7 +307,7 @@ ga('send', 'pageview');
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>     
     <!--<div class="footer-btl">
         <div class="footer-col">
             <div>
