@@ -112,7 +112,29 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 		</div>	
     <div class="g-container">
         <div class="g-container-box single">
-
+            <aside class="details">
+                <div class="details__items">
+                    <div class="details__title">
+						<?=get_title_by_tag($tag_id, 0, $excursion['type_id_lookup'])?>	
+					</div>
+                    <div class="details__item"><span class="details__item-title">Длительность</span> <?=out_duration($excursion['duration'])?></div>
+                    <div class="details__item"><span class="details__item-title">Размер группы</span> до <?=$excursion['people_max']?> человек</div>
+                    <div class="details__item"><span class="details__item-title">Дети</span> Можно с детьми</div>
+                <?  if ($excursion['extra_info4']) { ?>
+                        <div class="details__item"><span class="details__item-title">В стоимость включено</span><?=nl2br($excursion['extra_info4'])?></div>
+                <?  }
+                    if ($excursion['extra_info5']) { ?>
+                        <div class="details__item"><span class="details__item-title">Не входит в стоимость</span><?=nl2br($excursion['extra_info5'])?></div>
+                <?  } ?>
+                </div>
+                <div class="details__price">
+                <?  if ($is_group_price) { ?>
+                        <div class="details__item"><span class="details__price-number">€<?=$excursion['price_excursion']?></span> за <?=get_title_by_tag($tag_id, 2)?></div>
+                <?  } else if ($excursion['price_person']) { ?>
+                        <div class="details__item"><span class="details__price-number">€<?=$excursion['price_person']?></span> за человека</div>
+                <?  } ?>
+                </div>
+            </aside>
         <?	if (isset($_GET['order'])) { 
         		$order_num = $_GET['order']; ?>
 	        	<div class="details">
@@ -245,7 +267,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 		           	</div>
 	           	</div>
         <?  } else { ?>
-            <div>
+            <div class="order-container">
             <?	if ($booking_error) { ?>
 	            	<div class="g-error">
 	            		<?=$booking_error?>
