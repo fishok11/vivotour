@@ -154,16 +154,19 @@
                     </div>
 
                     <div class="navigation-item">
-                        <div class="navigation-item__info--select">
-                            <a href="">Италия</a>
+                        <div class="navigation-item__info-select">
+                            <a href="#">Италия</a>
                             <div class="arr-bottom">
                                 <i class="fa fa-angle-down"></i>
                             </div>
                         </div>
-                        <div class="navigation-item__info"><a href="">Испания</a></div>
-                        <div class="navigation-item__info"><a href="">Греция</a></div>
-                        <div class="navigation-item__info"><a href="">Германия</a></div>
-                        <div class="navigation-item__info"><a href="">Голландия</a></div>
+
+                        <ul class="navigation-item__list">
+                            <li class="navigation-item__info "><a href="#">Испания</a></li>
+                            <li class="navigation-item__info "><a href="#">Греция</a></li>
+                            <li class="navigation-item__info "><a href="#">Германия</a></li>
+                            <li class="navigation-item__info "><a href="#">Голландия</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -244,7 +247,7 @@
                                 <div class="body-excursion__item swiper-slide">
                                     <div class="body-excursion__item-container">
                                         <div class="excursion-item__text">
-                                            <a href="" class="excursion-text__head">Название экскурсии</a>
+                                            <a href="" class="excursion-text__head">Название экскурсии теперь реально длинное</a>
                                             <div class="excursion-text__info">1 час</div>
                                         </div>
                                         <div class="excursion-item__arrow-container">
