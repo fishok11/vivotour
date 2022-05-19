@@ -30,19 +30,31 @@
                         <figure class="excursions__item">
                             <a href="<?=$link?>" class="excursions__item-image">
                                 <img src="<?=$excursion['img_src']?>" alt="">
-                                <span class="excursions__item-duration"><?=out_duration($excursion['duration'])?> </span>
                             </a>
-                            <figcaption>
-                                <a href="<?=$link?>" class="excursions__item-title">
-                                    <?=$excursion['title']?>
-                                </a>
+
+                            <div class="excursions__item-image-container">
+                                <div class="excursions__item-image-text">
+                                    <a href="<?=$link?>" class="excursions__item-title">
+                                        <?=$excursion['title']?>
+                                    </a>
+                                    <span class="excursions__item-duration"><?=out_duration($excursion['duration'])?> </span>
+                                </div>
+
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                            <!-- <figcaption>
                                 <div class="excursions__item-info">
                                     <?=$excursion['annotation']?>
                                 </div>
                                 <div class="excursions__item-price">
                                 <?  if ($excursion['price_excursion']) { ?>
                                         <div>
-                                            <span class="excursions__item-price-value">€ <?=$excursion['price_excursion']?></span> за экскурсию
+                                            <span class="excursions__item-price-value">€ <?=$excursion['price_excursion']?></span> за <?=get_title_by_tag($excursion['vi_tag_id'], 2);?>
                                         </div>
                                 <?  } else if ($excursion['price_person']) { ?>
                                        <div>
@@ -50,7 +62,7 @@
                                        </div>
                                <?  }?>
                                 </div>
-                            </figcaption>
+                            </figcaption> -->
                         </figure>
                 <?  } ?>
                 </div>

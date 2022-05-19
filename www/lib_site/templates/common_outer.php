@@ -30,6 +30,12 @@
 	<link href="/fonts/font-awesome.min.css" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/0ed78f30c5.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 	<script src="/js/jquery-1.11.1.min.js"></script>
 	<script src="/js/jquery.easing.js"></script>
@@ -320,6 +326,7 @@ ga('send', 'pageview');
                 } catch(e) { }
             });
 
+
             var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
                 f = function () { n.parentNode.insertBefore(s, n); };
@@ -336,5 +343,8 @@ ga('send', 'pageview');
 
 
         <script src="https://kit.fontawesome.com/0ed78f30c5.js" crossorigin="anonymous"></script>
+
+        <script src="/js/script-new.js"></script>
+
 </body>
 </html>
