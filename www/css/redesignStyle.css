@@ -101,7 +101,7 @@ h3 {
     position: relative;
 }
 .popular-excursion__arrow {
-    font-size: 40px;
+    font-size: 30px;
     width: 55px;
     height: 55px;
     background-color: #ffffff38;
@@ -408,7 +408,7 @@ h3 {
 .body-excursion__arrow {
     text-decoration: none;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 30px;
     width: 55px;
     height: 55px;
     background-color: #ffffff38;
@@ -1717,10 +1717,10 @@ h3 {
     }
     .arr-bottom i {
         color: #ffffff;
-        font-size: 15px;
+        font-size: 10px;
         position: absolute;
-        top: -1px;
-        left: 1.4px;
+        top: 12%;
+        left: 19%;
     }
 
 
@@ -1823,7 +1823,7 @@ h3 {
     }
     .reviews-container__arrow {
         display: block;
-        font-size: 35px;
+        font-size: 25px;
     }
     .reviews-container__arrow a {
         color: var(--main-gren);
@@ -1833,14 +1833,14 @@ h3 {
         box-sizing: border-box;
         position: absolute;
         left: 0;
-        top: 20%;
+        top: 23%;
     }
     .reviews-container__arrow-right {
         padding-left: 10px;
         box-sizing: border-box;
         position: absolute;
         right: 0;
-        top: 20%;
+        top: 23%;
     }
 
 
