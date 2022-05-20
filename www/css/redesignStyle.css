@@ -101,7 +101,7 @@ h3 {
     position: relative;
 }
 .popular-excursion__arrow {
-    font-size: 30px;
+    font-size: 27px;
     width: 55px;
     height: 55px;
     background-color: #ffffff38;
@@ -408,7 +408,7 @@ h3 {
 .body-excursion__arrow {
     text-decoration: none;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 27px;
     width: 55px;
     height: 55px;
     background-color: #ffffff38;
@@ -722,7 +722,6 @@ h3 {
     border-bottom: 2px solid #e8e8e8;
     width: 100%;
 }
-
 .reviews-item__user-name {
     color: var(--main-blue);
     font-weight: bold;
@@ -1173,18 +1172,14 @@ h3 {
     font-size: 20px;
 }
 .feedback-people {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     width: 100%;
-    height: 135px;
+    overflow: hidden;
+    position: relative;
 }
 .feedback__container {
     margin-bottom: 12px;
     width: 100%;
-}
-.feedback__container {
-    display: flex;
 }
 .feedback__item {
     display: flex;
@@ -1249,50 +1244,35 @@ h3 {
     border-radius: 50%;
     background-color: var(--main-gren);
 }
-.feedback-item__arrow a{
-    position: relative;
-    top: 5px;
-    left: 5px;
-}
 .feedback-arrow1 {
     width: 15px;
     height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 4;
+}
+.feedback-arrow1 a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--main-gren);
 }
 .feedback-arrow1,
 .feedback-arrow2 {
     cursor: pointer;
-}
-.feedback-arrow1-top {
-    width: 13px;
-    height: 2px;
-    margin-bottom: 6px;
-    background: var(--main-gren);
-    transform: rotate(-45deg)
-}
-.feedback-arrow1-bottom {
-    width: 13px;
-    height: 2px;
-    margin-top: 6px;
-    background: var(--main-gren);
-    transform: rotate(45deg)
-}
+} 
 .feedback-arrow2 {
     width: 15px;
     height: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 4;
 }
-.feedback-arrow2-top {
-    width: 13px;
-    height: 2px;
-    margin-bottom: 6px;
-    background: var(--main-gren);
-    transform: rotate(45deg)
-}
-.feedback-arrow2-bottom {
-    width: 13px;
-    height: 2px;
-    margin-top: 6px;
-    background: var(--main-gren);
-    transform: rotate(-45deg)
+.feedback-arrow2 a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--main-gren);
 }
 
 .location {
@@ -1833,14 +1813,14 @@ h3 {
         box-sizing: border-box;
         position: absolute;
         left: 0;
-        top: 23%;
+        top: 50%;
     }
     .reviews-container__arrow-right {
         padding-left: 10px;
         box-sizing: border-box;
         position: absolute;
         right: 0;
-        top: 23%;
+        top: 50%;
     }
 
 
@@ -1987,6 +1967,10 @@ h3 {
         grid-template-columns: 1fr;
     }
 
+    .reviews-container__arrow-left,
+    .reviews-container__arrow-right {
+        top: 5%;
+    }
 
     .page-excursion .details .g-button {
         max-width: 286px;
@@ -2083,27 +2067,28 @@ h3 {
         background-position: bottom;
         height: auto;
     }
-    .feedback-people {
+    /* .feedback-people {
         display: flex;
         justify-content: space-around;
-    }
+    } */
     .feedback__container {
         width: fit-content;
     }
-    .feedback__item {
+    /* .feedback__item {
         display: none;
     }
     .feedback-item--active {
         display: flex;
         width: fit-content;
         margin: 0 auto;
-    }
+    } */
     .feedback-item__info {
-        font-size: 16px;
+        max-width: 547px;
+        font-size: 18px;
+        font-weight: normal;
     }
     .feedback-item__user {
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 20px;
     }
     .feedback-arrow2,
     .feedback-arrow1 {
@@ -2283,22 +2268,23 @@ h3 {
     .feedback-people {
        margin-bottom: 100px;
     }
-    .feedback__item {
+    /* .feedback__item {
         display: none;
-    }
-    .feedback-item--active {
+    } */
+    /* .feedback-item--active {
         display: flex;
-    }
-    .feedback-item__info {
-        font-size: 16px;
-    }
+    } */
+
     .feedback-item__user {
-        font-size: 18px;
         margin-bottom: 10px;
     }
     .feedback-arrow2,
     .feedback-arrow1 {
         margin-bottom: 45px;
+    }
+    .feedback-arrow1,
+    .feedback-arrow2 {
+        top: 5%;
     }
     .location {
         display: none;
