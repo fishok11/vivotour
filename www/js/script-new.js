@@ -103,3 +103,23 @@ if (menuSelect) {
     firstMenuItem.classList.toggle('navigation-item__list--active');
   });
 };
+
+
+const swiperFeedback = new Swiper('.feedback-people', {
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+
+  navigation: {
+    nextEl: '.feedback-arrow2',
+    prevEl: '.feedback-arrow1',
+  },
+
+});

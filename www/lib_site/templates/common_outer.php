@@ -146,12 +146,9 @@ ga('send', 'pageview');
                     <p class="feedback-subtitle">Что пишут о нас путешественники</p>
                 </div>
                 <div class="feedback-people">
-                    <div class="feedback-arrow1" role="button">
-                        <div class="feedback-arrow1-top"></div>
-                        <div class="feedback-arrow1-bottom"></div>
-                    </div>     
-                    <div class="feedback__container">                                
-                        <div class="feedback__item feedback-item--active">
+
+                    <div class="feedback__container swiper-wrapper">                                
+                        <div class="feedback__item swiper-slide">
                             <div class="feedback-item__stars">
                                 <i class="fa-solid fa-star star star--color"></i>
                                 <i class="fa-solid fa-star star star--color"></i>
@@ -167,7 +164,39 @@ ga('send', 'pageview');
                             </div>
                         </div>
 
-                        <div class="feedback__item">
+                        <div class="feedback__item swiper-slide">
+                            <div class="feedback-item__stars">
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </div>
+                            <div class="feedback-item__user">
+                                <span class="feedback-item__user-name">Александр Сергеевич</span> про <span class="feedback-item__user-title">"Название экскурсии"</span>
+                            </div>
+                            <div class="feedback-item__info">
+                                Я бронировала экскурсию в сервисе по колизею, мы были вдвоем с дочкой 6 лет. Мне очень понравилось, как гид Евгений, провел экскурсию не скучно, с юмором, все было понятно и очень познавательно... 
+                            </div>
+                        </div>
+
+                        <div class="feedback__item swiper-slide">
+                            <div class="feedback-item__stars">
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star star--color"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </div>
+                            <div class="feedback-item__user">
+                                <span class="feedback-item__user-name">Александр Сергеевич</span> про <span class="feedback-item__user-title">"Название экскурсии"</span>
+                            </div>
+                            <div class="feedback-item__info">
+                                Я бронировала экскурсию в сервисе по колизею, мы были вдвоем с дочкой 6 лет. Мне очень понравилось, как гид Евгений, провел экскурсию не скучно, с юмором, все было понятно и очень познавательно... 
+                            </div>
+                        </div>
+                        
+                        <div class="feedback__item swiper-slide">
                             <div class="feedback-item__stars">
                                 <i class="fa-solid fa-star star star--color"></i>
                                 <i class="fa-solid fa-star star star--color"></i>
@@ -183,11 +212,18 @@ ga('send', 'pageview');
                             </div>
                         </div>
                     </div>   
+
+                    <div class="feedback-arrow1" role="button">
+                        <a href="">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    </div>   
+
                     <div class="feedback-arrow2"  role="button">
-                        <div class="feedback-arrow2-top"></div>
-                        <div class="feedback-arrow2-bottom"></div>
-                    </div>
-                        
+                        <a href="">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div> 
                 </div>       
             </div>          
         </div>
