@@ -468,7 +468,7 @@ h3 {
     padding: 0 15px;
     box-sizing: border-box;
 }
-.body-content .body-excursion__item-container{
+.body-excursion__container-net-big .body-excursion__item-container {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
     border-radius:  0 0 8px 8px;
     padding: 10px 23px;
@@ -479,7 +479,7 @@ h3 {
 .excursion-item__text{
     color: #ffffff;
 }
-.body-excursion .excursion-text__head {
+.body-excursion__container-net-big .excursion-text__head {
     max-width: 250px;
     width: 100%;
 }
@@ -905,12 +905,16 @@ h3 {
 
 .header {
     width: 100%;
-    height: 700px;
+    height: 480px;
     background-image: url('/imageNew/backgrounds_1920/шапка_1920.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 0 -20px 0 rgba(255, 255, 255, 0.5);
+}
+.page-index .header {
+    height: 700px;
+    background-position: center;
 }
 .header-container {
 }
@@ -922,6 +926,9 @@ h3 {
     position: absolute;
     z-index: 1;
     box-shadow: inset 0 -20px 0 rgba(0, 0, 0, 0.1);
+}
+.header-burger-menu--active {
+    display: block;
 }
 .header-burger-menu-arrow {
     color: var(--main-gren);
@@ -993,9 +1000,11 @@ h3 {
 .header-middle {
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: auto;
     margin-top: 200px;
+}
+.page-index .header-middle{
+    align-items: center;
 }
 .header-middle-container {
     width: fit-content;
@@ -1014,19 +1023,32 @@ h3 {
     font-weight: lighter;
     margin-bottom: 38px;
 }
+.page-index .header-middle-textTop {
+    font-size: 42px;
+}
 .header-middle-textMiddle {
     height: auto;
-    font-size: 70px;
+    font-size: 65px;
     font-weight: bold;
     margin-bottom: 25px;
 }
+.page-index .header-middle-textMiddle {
+    font-size: 70px;
+}
 .header-middle-textBottom {
     font-size: 29px;
-    display: flex;
+    display: flex; 
+}
+.page-index .header-middle-textBottom {
+    font-size: 29px;
     justify-content: center;
-
 }
 .header-location {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+.page-index .header-location {
     position: absolute;
     top: 346px;
 }
@@ -1049,14 +1071,16 @@ h3 {
     font-size: 16px;
 }
 
-
 .header-search {
     width: 100%;
     height: 68px;
-    display: flex;
+    display: none;
     align-items: flex-end;
     justify-content: center;
     margin-top: 125px;
+}
+.page-index .header-search {
+    display: flex;
 }
 .header-search-container  {
     height: 68px;
@@ -1133,12 +1157,16 @@ h3 {
 
 
 .background-feedback {
+    display: none;
     min-height: 1300px;
     height: calc(100vw * 0.77 + 130px);
     background-image: url("/imageNew/backgrounds_1920/feedback.jpg");
     background-size: 100% auto;
     background-position: bottom;
     background-repeat: no-repeat;
+}
+.page-index  .background-feedback {
+    display: block;
 }
 .feedback { 
     
@@ -1387,11 +1415,46 @@ h3 {
 .footer { 
     height: auto;
     background-color: #00285b;
-    background-image: url("/imageNew/backgrounds_1920/footer.jpg");
+    background-image: url("/imageNew/backgrounds_1920/footerall.jpg");
     background-size: 100% auto;
     background-position: top;
     background-repeat: no-repeat;
     padding-bottom: 50px;
+}
+.page-index .footer {
+    background-image: url("/imageNew/backgrounds_1920/footer.jpg");
+    
+}
+.footer-excursion {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.page-index .footer-excursion {
+    display: none;
+}
+.footer-excursion-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6) 100%;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.footer-excursion-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.footer-excursion-button {
+    margin-top: 20px;
 }
 .footer-menu {
     border-bottom: 1px solid #1d81a0;
@@ -2045,9 +2108,6 @@ h3 {
     .header-container {
         background-image: linear-gradient( rgb(152, 217, 236,1) 0%, rgba(173,220,234,0) 70%);
     }
-    .header-burger-menu {
-        display: block;
-    }
     .header-burger-link {
         display: block;
     }
@@ -2097,9 +2157,6 @@ h3 {
         display: flex;
         width: fit-content;
         margin: 0 auto;
-    }
-    .feedback-item__info {
-        font-size: 16px;
     }
     .feedback-item__user {
         font-size: 18px;
@@ -2208,7 +2265,6 @@ h3 {
         background-image: linear-gradient( rgb(152, 217, 236,1) 0%, rgba(173,220,234,0) 70%);
     }
     .header-burger-menu {
-        display: none;
         width: 100%;
         height: 500px;
     }

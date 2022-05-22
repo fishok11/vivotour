@@ -27,6 +27,9 @@
 
     $tag_id = $excursion['vi_tag_id'];
 ?>
+            </div>
+        </div>
+    </header>
 <article itemscope itemtype="http://schema.org/Article">
     <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="<?=SEO_CANONICAL?>">
     <link itemprop="image" href="https://<?=$_SERVER['HTTP_HOST'] . $excursion['img_src']?>">
@@ -44,7 +47,7 @@
             <meta itemprop="addressCountry" content="RU">
         </div>
     </div>
-    <div class="index-hero" style="background-image: url('<?=$excursion['img_src_detail']?>')">
+    <div class="index-hero" ><!--style="background-image: url('<?=$excursion['img_src_detail']?>')" -->
         <div class="g-container">
             <div class="g-container-box">
                 <div class="home-promo">
@@ -54,6 +57,7 @@
             </div>
         </div>
     </div>
+                
     <div class="body-content ">
         <div class="g-container">
             <div class="g-container-box">

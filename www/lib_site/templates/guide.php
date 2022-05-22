@@ -1,21 +1,24 @@
 <?
     $guide = current($_DATA['vi_guide']['items']); ?>
 
-    <div class="guide-hero">
-        <div class="g-container">
-            <div class="g-container-box">
-                <div class="guide-index">
-                    <div class="guide__photo">
-                        <img src="<?=$guide['img_src']?>" alt="">
-                    </div>
-                    <div class="home-promo">
-                        <h1><?=$guide['name']?></h1>
-                        <h2><?=$guide['vi_city_lookup']?>. Гид по городу и региону.</h2>
+                <div class="guide-hero">
+                    <div class="g-container">
+                        <div class="g-container-box">
+                            <div class="guide-index">
+                                <div class="guide__photo">
+                                    <img src="<?=$guide['img_src']?>" alt="">
+                                </div>
+                                <div class="home-promo">
+                                    <h1><?=$guide['name']?></h1>
+                                    <h2><?=$guide['vi_city_lookup']?>. Гид по городу и региону.</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <div class="body-content">
         <div class="g-container">
             <div class="g-container-box">

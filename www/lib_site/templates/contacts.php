@@ -35,6 +35,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <?	}
 }
 ?>
+            </div>
+        </div>
+    </header>
 <article>
 	<div class="body-content-top">
 		<div class="body-content-title-bgr" style="background-image: url(/uploads/images/sections/contacts.jpg);">

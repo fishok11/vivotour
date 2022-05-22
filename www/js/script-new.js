@@ -103,3 +103,21 @@ if (menuSelect) {
     firstMenuItem.classList.toggle('navigation-item__list--active');
   });
 };
+
+
+
+const burgerIconClosed = document.getElementsByClassName("header-burger-link")[0];
+
+const burgerIconOpen = document.getElementsByClassName("header-burger-menu-arrow")[0];
+
+const burgerMenu = document.getElementsByClassName("header-burger-menu")[0];
+
+burgerIconClosed.addEventListener("click", function(e) {
+  e.preventDefault();
+  burgerMenu.classList.add('header-burger-menu--active');
+});
+
+burgerIconOpen.addEventListener("click", function(e) {
+  e.preventDefault();
+  burgerMenu.classList.remove('header-burger-menu--active');
+});

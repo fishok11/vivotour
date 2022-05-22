@@ -1,3 +1,6 @@
+            </div>
+        </div>
+    </header>
 <div class="body-content-main">
     <article>
     <?	if (isset($_DATA['news']['items'])) {
