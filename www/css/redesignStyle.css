@@ -1217,12 +1217,13 @@ h3 {
 .background-feedback {
     display: none;
     min-height: 1300px;
-    height: calc(100vw * 0.77 + 130px);
+    height: calc(100vw * 0.77 + 235px);
     background-image: url("/imageNew/backgrounds_1920/feedback.jpg");
     background-size: 100% auto;
     background-position: bottom;
     background-repeat: no-repeat;
 }
+
 .page-index  .background-feedback {
     display: block;
 }
