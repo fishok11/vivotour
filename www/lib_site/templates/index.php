@@ -18,6 +18,34 @@
             </div>
         </div>
     </div> -->
+                <div class="header-middle">
+                    <div class="header-middle-container">
+                        <p class="header-middle-textTop">увлектаелные экскурсии</p>
+                        <p class="header-middle-textMiddle">ПО ИТАЛИИ И ЕВРОПЕ</p>
+                        <p class="header-middle-textBottom">60 городов и направлений</p>
+                    </div>    
+                </div>
+                <div class="header-location">
+                    <i class="location-map fa-solid fa-location-dot"></i>
+                    <p class="location-text1">Монумент Витториано</p>
+                    <p class="location-text2">Рим</p>
+                </div>
+                <div class="header-search"> 
+                    <div class="header-search-container">  
+                        <form class="header-search-form">
+                            <input class="header-search-input" type="text" placeholder="Название города">
+                            <button class="header-search-button" type="submit">найти
+                                <div class="header-search-arrow">
+                                    <div class="header-search-arrow1"></div>
+                                    <div class="header-search-arrow2"></div>
+                                </div>   
+                            </button>
+                        </form>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="popular-excursions">
         <div class="g-container">
             <div class="popular-excursions__container">
@@ -201,7 +229,11 @@
         <div class="g-container">
             <div class="body-info">
                 <div class="body-info__container">
-                    <img src="/imgNew/img/bodyGeo.png" alt="" class="body-geo">
+                    <div class="body-geo">
+                    <i class="location-map fa-solid fa-location-dot"></i>
+                    <p class="location-text1">Амальфитанское побережье</p>
+                    <p class="location-text2">Салерно, Кампания</p>
+                    </div>
                     <div class="body-info__container-head">
                         Наши преимущества
                     </div>

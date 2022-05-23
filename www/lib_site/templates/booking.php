@@ -100,6 +100,9 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 	}
 
 } ?>
+            </div>
+        </div>
+    </header>
 <div class="body-content ">
 		<div class="g-container">
 		  <div class="g-container-box">

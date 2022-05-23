@@ -28,32 +28,35 @@
 
     $city = current($_DATA['vi_city']['items']); ?>
 
-    <div class="index-hero" style="background-image: url('<?=$city['img_src_detail']?>')">
-        <div class="g-container">
-            <div class="g-container-box">
-                <div class="home-promo">
-                    <h1><?=$city['name']?></h1>
-                    <div class="home-promo-tags">
-                        <a href="./?city=<?=$city['id']?>"<?=!isset($current_tag)?' class="current"' : ''?>>Все экскурсии <?=count($_DATA['vi_excursion']['items'])?></a>
-                    <?  foreach ($all_tags as $id => $tag) {
+                 <div class="index-hero" ><!--style="background-image: url('<?=$city['img_src_detail']?>')"-->
+                    <div class="g-container">
+                        <div class="g-container-box">
+                            <div class="home-promo">
+                                <h1><?=$city['name']?></h1>
+                                <div class="home-promo-tags">
+                                    <a href="./?city=<?=$city['id']?>"<?=!isset($current_tag)?' class="current"' : ''?>>Все экскурсии <?=count($_DATA['vi_excursion']['items'])?></a>
+                                <?  foreach ($all_tags as $id => $tag) {
 
-                            // this one is kinda our system tag so do not show
-                            if ($tag['is_auto_booking'])  {
-                                continue;
-                            }
+                                        // this one is kinda our system tag so do not show
+                                        if ($tag['is_auto_booking'])  {
+                                            continue;
+                                        }
 
-                            $count_str = '';
-                            if (isset($tags[$id])) {
-                                $count_str = $tags[$id]; ?>
-                                <a href="./?city=<?=$city['id']?>&tag=<?=$id?>"<?=(isset($current_tag) && $current_tag == $id)?' class="current"' : ''?>><?=$all_tags[$id]['title']?> &nbsp;<?=$count_str?></a>
-                        <?  } ?>
-                    <?  } ?>
+                                        $count_str = '';
+                                        if (isset($tags[$id])) {
+                                            $count_str = $tags[$id]; ?>
+                                            <a href="./?city=<?=$city['id']?>&tag=<?=$id?>"<?=(isset($current_tag) && $current_tag == $id)?' class="current"' : ''?>><?=$all_tags[$id]['title']?> &nbsp;<?=$count_str?></a>
+                                    <?  } ?>
+                                <?  } ?>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
+    </header>
     <div class="body-content">
         <div class="g-container">
             <div class="g-container-box">
