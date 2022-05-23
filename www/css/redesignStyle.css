@@ -939,7 +939,7 @@ h3 {
 }
 .header-burger-menu {
     display: none;
-    height: 700px;
+    height: 100%;
     width: 40%;
     background-color: #ffffff;
     position: absolute;
@@ -2361,7 +2361,6 @@ h3 {
     }
     .header-burger-menu {
         width: 100%;
-        height: 500px;
     }
     .header-burger-link {
         display: block;
