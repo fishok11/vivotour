@@ -229,7 +229,11 @@
         <div class="g-container">
             <div class="body-info">
                 <div class="body-info__container">
-                    <img src="/imgNew/img/bodyGeo.png" alt="" class="body-geo">
+                    <div class="body-geo">
+                    <i class="location-map fa-solid fa-location-dot"></i>
+                    <p class="location-text1">Амальфитанское побережье</p>
+                    <p class="location-text2">Салерно, Кампания</p>
+                    </div>
                     <div class="body-info__container-head">
                         Наши преимущества
                     </div>

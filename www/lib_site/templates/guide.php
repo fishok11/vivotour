@@ -22,9 +22,19 @@
     <div class="body-content">
         <div class="g-container">
             <div class="g-container-box">
+                <!-- <div class="guide-index">
+                    <div class="guide__photo">
+                        <img src="<?=$guide['img_src']?>" alt="">
+                    </div>
+                    <div class="home-promo">
+                        <h1><?=$guide['name']?></h1>
+                        <h2><?=$guide['vi_city_lookup']?>. Гид по городу и региону.</h2>
+                    </div>
+                </div> 
+            
                 <div class="single__body-main">
                     <?=$guide['annotation']?>
-                </div>
+                </div> -->
             <?  if (isset($_DATA['vi_excursion']['items'])) { ?>
                 <div class="single__body-title">Мои экскурсии</div>
                 <div class="excursions">
