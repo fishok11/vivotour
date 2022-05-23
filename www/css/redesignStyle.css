@@ -1746,6 +1746,7 @@ h3 {
     color: var(--main-blue);
     padding: 10px 0;
     box-sizing: border-box;
+    margin-top: 30px;
 }
 .page-guide .single__body-main {
     font-size: 21px;
