@@ -282,13 +282,11 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 						<form action="" class="order__form">
 							<div class="order-form__item">
 								<div class="mdl-textfield mdl-js-textfield">
-									<input class="mdl-textfield__input" type="text" id="sample1">
-									<label class="mdl-textfield__label" for="sample1">Выберите дату</label>
+									<input class="mdl-textfield__input" placeholder="Выберите дату "type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="sample1" >
 								</div>
 
 								<div class="mdl-textfield mdl-js-textfield">
-									<input class="mdl-textfield__input" type="text" id="sample1">
-									<label class="mdl-textfield__label" for="sample1">Выберите время</label>
+									<input class="mdl-textfield__input" placeholder="Выберите время" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" id="sample1" >
 								</div>
 							</div>
 

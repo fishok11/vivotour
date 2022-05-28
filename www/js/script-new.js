@@ -16,8 +16,8 @@ const swiper1 = new Swiper('.popular-excursions__info', {
 
 
   navigation: {
-  nextEl: '.popular-excursion__arrow-right',
-  prevEl: '.popular-excursion__arrow-left',
+    nextEl: '.popular-excursion__arrow-right',
+    prevEl: '.popular-excursion__arrow-left',
   },
 
 });
@@ -40,8 +40,8 @@ const swiper2 = new Swiper('.body-excursion__container-net-big', {
   },
 
   navigation: {
-      nextEl: '.body-excursion__arrow-right',
-      prevEl: '.body-excursion__arrow-left',
+    nextEl: '.body-excursion__arrow-right',
+    prevEl: '.body-excursion__arrow-left',
   },
 
 });
@@ -71,12 +71,7 @@ const enableSwiper = function() {
         slidesPerView: 1,
         spaceBetween: 30,
       },
-      // 986: {
-      //   slidesPerView: 1,
-      //   spaceBetween: 30,
-      // }
     },
-  
   
     navigation: {
     nextEl: '.reviews-container__arrow-right',

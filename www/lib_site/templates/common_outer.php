@@ -25,16 +25,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-indigo.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	
+
     <link href="/css/redesignStyle.css" rel="stylesheet">
 	<link href="/fonts/font-awesome.min.css" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/0ed78f30c5.js" crossorigin="anonymous"></script>
+
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 	<script src="/js/jquery-1.11.1.min.js"></script>
@@ -472,6 +472,5 @@ ga('send', 'pageview');
         <script src="https://kit.fontawesome.com/0ed78f30c5.js" crossorigin="anonymous"></script>
 
         <script src="/js/script-new.js"></script>
-
 </body>
 </html>

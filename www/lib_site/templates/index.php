@@ -65,10 +65,12 @@
                 <div class="popular-excursions__info">
                     <div class="popular-excursions__slides swiper-wrapper">
                         <div class="popular-excursions__info-item swiper-slide">
-                            <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            <a href="" class="popular-excursions__info-img-container">
+                                <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            </a>
                             <div class="body-excursion__item-container">
                                 <div class="excursion-item__text">
-                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <a href="" class="excursion-text__head">Название экскурсии</a>
                                     <div class="excursion-text__info">1 час</div>
                                 </div>
                                 <div class="excursion-item__arrow-container">
@@ -80,10 +82,12 @@
                         </div>
 
                         <div class="popular-excursions__info-item swiper-slide">
-                            <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            <a href="" class="popular-excursions__info-img-container">
+                                <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            </a>
                             <div class="body-excursion__item-container">
                                 <div class="excursion-item__text">
-                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <a href="" class="excursion-text__head">Название экскурсии</a>
                                     <div class="excursion-text__info">1 час</div>
                                 </div>
                                 <div class="excursion-item__arrow-container">
@@ -95,10 +99,12 @@
                         </div>
 
                         <div class="popular-excursions__info-item swiper-slide">
-                            <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            <a href="" class="popular-excursions__info-img-container">
+                                <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            </a>
                             <div class="body-excursion__item-container">
                                 <div class="excursion-item__text">
-                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <a href="" class="excursion-text__head">Название экскурсии</a>
                                     <div class="excursion-text__info">1 час</div>
                                 </div>
                                 <div class="excursion-item__arrow-container">
@@ -110,10 +116,12 @@
                         </div>
 
                         <div class="popular-excursions__info-item swiper-slide">
-                            <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            <a href="" class="popular-excursions__info-img-container">
+                                <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            </a>
                             <div class="body-excursion__item-container">
                                 <div class="excursion-item__text">
-                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <a href="" class="excursion-text__head">Название экскурсии</a>
                                     <div class="excursion-text__info">1 час</div>
                                 </div>
                                 <div class="excursion-item__arrow-container">
@@ -125,12 +133,16 @@
                         </div>
 
                         <div class="popular-excursions__info-item swiper-slide">
-                            <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            <a href="" class="popular-excursions__info-img-container">
+                                <img src="/imgNew/img/bridge.jpg" alt="" class="popular-excursions__info-img">
+                            </a>
+                            
                             <div class="body-excursion__item-container">
                                 <div class="excursion-item__text">
-                                    <div class="excursion-text__head">Название экскурсии</div>
+                                    <a href="" class="excursion-text__head">Название экскурсии</a>
                                     <div class="excursion-text__info">1 час</div>
                                 </div>
+
                                 <div class="excursion-item__arrow-container">
                                     <div class="excursion-item__arrow">
                                         <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
