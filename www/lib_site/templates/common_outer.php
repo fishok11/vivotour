@@ -216,43 +216,44 @@ ga('send', 'pageview');
                         </div>
                     </div>
                     <div class="description-text">
-                        <div>
-                            <p class="description-text-left">
-                                Наш сервис - это совместный проект содружества </br>
+                        <div  class="description-text-left">
+                            <p>
+                                Наш сервис - это совместный проект содружества
                                 профессиональных гидов и путешественников.
                             </p>
-                            <p class="description-text-left">
-                                Мы твердо убеждены, что разнообразие - это ключ к лучшему </br>
-                                пониманию потребностей наших искушенных </br>
-                                путешественников, следователно , к лучшему пониманию их </br>
-                                желаний. Именно по этому мы объеденили самых энергичных </br>
-                                и увлеченных профессионалов из разных регионв Италии </br>
+                            <p>
+                                Мы твердо убеждены, что разнообразие - это ключ к лучшему
+                                пониманию потребностей наших искушенных
+                                путешественников, следователно , к лучшему пониманию их
+                                желаний. Именно по этому мы объеденили самых энергичных
+                                и увлеченных профессионалов из разных регионв Италии
                                 и Европы.
                             </p>
-                            <p class="description-text-left">
-                                Мы предоставляем интернет-платформу, позволяющюю </br>
-                                выбрать и  воспользоваться лучшими экскурсионными </br>
+                            <p>
+                                Мы предоставляем интернет-платформу, позволяющюю
+                                выбрать и  воспользоваться лучшими экскурсионными
                                 предложениями по достопримечательностям Италии и Европы.
                             </p>
                         </div>
-                        <div>
-                            <p class="description-text-right">
-                                Наша компания дает вам возможность увидеть </br>
-                                самые популярные и уникальные места и </br>
-                                побывать на необычных экскурсиях в лучших </br>
+                        <div  class="description-text-right">
+                            <p>
+                                Наша компания дает вам возможность увидеть
+                                самые популярные и уникальные места и
+                                побывать на необычных экскурсиях в лучших
                                 регионах европейских стран.
                             </p>
-                            <p class="description-text-right">
-                                Вы можете написать на по адресу </br>
-                                <span class="description-text-border">support@vivotour.ru,</span> </br>
-                                а с 9:00 до 18:00 по московскому времени - </br>
-                                позвонить по телефону<span class="description-number">+7 (495) 991-07-55.</span>
+                            <p>
+                                Вы можете написать на по адресу
+                                <a href="#">support@vivotour.ru,</a>
+                                а с 9:00 до 18:00 по московскому времени -
+                                позвонить по телефону <strong>+7 (495) 991-07-55.</strong>
                             </p>
-                            <p class="description-text-right">Подробная контактная </br>
-                            информация и доступные </br>
-                            способы связи </br>
-                            <span class="description-text-border">размещены здесь.</span>
-                        </p>
+                            <p>
+                                Подробная контактная
+                                информация и доступные
+                                способы связи
+                                <a href="#">размещены здесь.</a>
+                            </p>
                         </div>
                     </div>    
                 </div>    
@@ -384,7 +385,7 @@ ga('send', 'pageview');
                     <p class="footer-contacts-chat-text2">2021 VIVO Tour</p>
                 </div>
                 <div class="footer-contacts-numbers">
-                    <p class="footer-contacts-numbers-mail">support@vivotour.ru</p>
+                    <a href="#" class="footer-contacts-numbers-mail">support@vivotour.ru</a>
                     <p class="footer-contacts-numbers-phone">+7 (495) 991-07-55</p>
                     <p class="footer-contacts-numbers-hours">Без выходных </br>09:00-18:00 по Москве</p>
                 </div>
@@ -394,7 +395,7 @@ ga('send', 'pageview');
                         <input class="footer-contacts-mailing-input" type="text" placeholder="Ваш email">
                         <button class="footer-contacts-mailing-button" type="submit">подписаться</button>
                     </form> 
-                    <p class="footer-contacts-mailing-text">Нажимая кнопку Пописаться, вы соглашаетесь </br>с политикой <span class="description-text-border">персональных данных</span></p>
+                    <p class="footer-contacts-mailing-text">Нажимая кнопку Пописаться, вы соглашаетесь </br>с политикой <a herf="#" class="footer-text-border">персональных данных.</a></p>
                 </div>
                 <div class="footer-contacts-icons">
                     <a href="#" class="footer-contacts-icons-logo"></a>
