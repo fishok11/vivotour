@@ -1080,6 +1080,9 @@ h3 {
     padding: 5px;
     margin: 7px;
 }
+.page-article .index-hero .g-container {
+    padding: 0;
+}
 .header-middle {
     display: flex;
     flex-direction: column;
@@ -1104,16 +1107,18 @@ h3 {
     justify-content: flex-start;
     font-size: 42px;
     font-weight: lighter;
-    margin-bottom: 38px;
+    
 }
 .header-middle-textMiddle {
     height: auto;
     font-size: 65px;
     font-weight: bold;
-    margin-bottom: 25px;
+    line-height: 1em;
+    margin-bottom: 0;
 }
 .header-middle-textBottom {
     font-size: 29px;
+    display: flex;
     justify-content: center;
 }
 .header-location {
@@ -1408,7 +1413,7 @@ h3 {
     height: 100%;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0.6) 100%);
     border-radius: 15px;
-    padding-bottom: 40px;
+    padding: 0 40px 40px 40px;
 }
 .description-title {
     width: 100%;
@@ -1442,22 +1447,25 @@ h3 {
     margin-top: 40px;
 }
 .description-text-left {
-    font-size: 20px;
-    margin-left: 65px;
-    font-weight: lighter;
+    
 }
-.description-text-right {
+.description-text-left p {
     font-size: 20px;
-    margin-left: 47px;
+    font-weight: lighter;
+    padding-right: 40px;
+}
+.description-text-right p {
+    font-size: 20px;
     font-weight: 500;
 }
-.description-text-border {
+.description a {
+    text-decoration: none;
     border-bottom: 2px solid var(--main-gren);
+    color: #000000;
 }
-.description-number {
+.description strong {
     font-weight: bold;
     color: var(--main-gren);
-    margin-left: 5px;
 }
 
 
@@ -1583,6 +1591,7 @@ h3 {
     flex-direction: column;
 }
 .footer-contacts-numbers-mail {
+    text-decoration: none;
     width: fit-content;
     font-size: 20px;
     color: #FFFFFF;
@@ -1605,6 +1614,11 @@ h3 {
 .footer-contacts-mailing {
     display: flex;
     flex-direction: column;
+}
+.footer-text-border {
+    text-decoration: none;
+    border-bottom: 2px solid var(--main-gren);
+    color: #ffffff;
 }
 .footer-contacts-mailing-form {
     width: 464px;
@@ -2255,6 +2269,9 @@ h3 {
     .header-search-form {
         width: calc(100% - 8px);
     }
+    .header-middle-textMiddle {
+        font-size: 55px;
+    }
     .background-feedback {
         background-size: 140% auto;
         background-position: bottom;
@@ -2410,7 +2427,7 @@ h3 {
     }
     .home-promo-tags a {
         font-size: 16px;
-        padding: 2px;
+        padding: 7px;
         margin: 4px;
     }
     .page-city .home-promo h1 {
@@ -2510,17 +2527,10 @@ h3 {
     .description-title-text {
         font-size: 30px;
     }
-    .description-text-left,
-    .description-text-right {
+    .description-text-left p ,
+    .description-text-right p {
         margin: 10px 10px 10px 15px;
-        font-weight: 400;
-        font-size: 17px;
-    }
-    .description-text-left br {
-        display: none;
-    }
-    .description-text-right br {
-        display: none;
+        font-weight: 300;
     }
     .footer {
         background-size: 300% auto;
