@@ -125,7 +125,7 @@ h3 {
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: -15px;
+    right: -11px;
     top: 30%;
 }
 /* .popular-excursions__info-item {} */
@@ -1353,7 +1353,7 @@ h3 {
     width: 15px;
     height: 20px;
     position: absolute;
-    left: 0;
+    left: 1px;
     top: 50%;
     z-index: 4;
 }
