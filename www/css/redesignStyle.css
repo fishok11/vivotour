@@ -2425,9 +2425,12 @@ h3 {
     .header-menu {
         display: none;
     }
+    .page-city .header {
+        height: 650px;
+    }
     .home-promo-tags a {
         font-size: 16px;
-        padding: 7px;
+        padding:5px;
         margin: 4px;
     }
     .page-city .home-promo h1 {
@@ -2526,6 +2529,8 @@ h3 {
     }
     .description-title-text {
         font-size: 30px;
+        text-align: center;
+        line-height: 30px;
     }
     .description-text-left p ,
     .description-text-right p {
