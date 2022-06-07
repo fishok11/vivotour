@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-indigo.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-    <link href="/css/redesignStyle.css" rel="stylesheet">
+    
 	<link href="/fonts/font-awesome.min.css" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/0ed78f30c5.js" crossorigin="anonymous"></script>
@@ -36,7 +36,8 @@
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+    
+    <link href="/css/redesignStyle.css" rel="stylesheet">
 	<script src="/js/jquery-1.11.1.min.js"></script>
 	<script src="/js/jquery.easing.js"></script>
     <script>
@@ -266,31 +267,65 @@ ga('send', 'pageview');
             <div class="footer-excursion">
                 <div class="footer-excursion-container">
                     <div class="footer-excursion-title">
-                        <p class="description-title-text">Рекомендуем экскурсии в Риме</p>
+                        <p class="description-title-text">Рекомендуем по темам</p>
                         <div class="description-line">
                             <div class="description-line1"></div>
                             <div class="description-line2"></div>
                         </div>
                     </div>
                     <div class="body-excursion__container-net-big"> 
+                        <div class="body-excursion__item swiper-slide">
+                            <div class="body-excursion__item-container">
+                                <div class="excursion-item__text">
+                                    <a href="" class="excursion-text__head">Название экскурсии</a>
+                                    <div class="excursion-text__info">1 час</div>
+                                </div>
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div class="body-excursion__item swiper-slide">
+                            <div class="body-excursion__item-container">
+                                <div class="excursion-item__text">
+                                    <a href="" class="excursion-text__head">Название экскурсии</a>
+                                    <div class="excursion-text__info">1 час</div>
+                                </div>
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div class="body-excursion__item swiper-slide">
+                            <div class="body-excursion__item-container">
+                                <div class="excursion-item__text">
+                                    <a href="" class="excursion-text__head">Название экскурсии</a>
+                                    <div class="excursion-text__info">1 час</div>
+                                </div>
+                                <div class="excursion-item__arrow-container">
+                                    <div class="excursion-item__arrow">
+                                        <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="body-excursion__container-net-small">
+                        <a href="#" class="body-excursion__arrow-small body-excursion__arrow-small-left">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+
                         <div class="body-excursion__slides swiper-wrapper">
                             <div class="body-excursion__item swiper-slide">
                                 <div class="body-excursion__item-container">
                                     <div class="excursion-item__text">
-                                        <a href="" class="excursion-text__head">Название экскурсии теперь реально длинное</a>
-                                        <div class="excursion-text__info">1 час</div>
-                                    </div>
-                                    <div class="excursion-item__arrow-container">
-                                        <div class="excursion-item__arrow">
-                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-
-                            <div class="body-excursion__item swiper-slide">
-                                <div class="body-excursion__item-container">
-                                    <div class="excursion-item__text">
                                         <a href="" class="excursion-text__head">Название экскурсии</a>
                                         <div class="excursion-text__info">1 час</div>
                                     </div>
@@ -314,7 +349,21 @@ ga('send', 'pageview');
                                         </div>
                                     </div>  
                                 </div>
-                            </div> 
+                            </div>
+                            
+                            <div class="body-excursion__item swiper-slide">
+                                <div class="body-excursion__item-container">
+                                    <div class="excursion-item__text">
+                                        <a href="" class="excursion-text__head">Название экскурсии</a>
+                                        <div class="excursion-text__info">1 час</div>
+                                    </div>
+                                    <div class="excursion-item__arrow-container">
+                                        <div class="excursion-item__arrow">
+                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
 
                             <div class="body-excursion__item swiper-slide">
                                 <div class="body-excursion__item-container">
@@ -328,36 +377,18 @@ ga('send', 'pageview');
                                         </div>
                                     </div>  
                                 </div>
-                            </div> 
+                            </div>
+                        </div>
 
-                            <div class="body-excursion__item swiper-slide">
-                                <div class="body-excursion__item-container">
-                                    <div class="excursion-item__text">
-                                        <a href="" class="excursion-text__head">Название экскурсии</a>
-                                        <div class="excursion-text__info">1 час</div>
-                                    </div>
-                                    <div class="excursion-item__arrow-container">
-                                        <div class="excursion-item__arrow">
-                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div> 
-                        </div>      
-
-                        <a href="#" class="body-excursion__arrow body-excursion__arrow-left">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-
-                        <a href="#" class="body-excursion__arrow body-excursion__arrow-right">
+                        <a href="#" class="body-excursion__arrow-small body-excursion__arrow-small-right">
                             <i class="fa fa-angle-right"></i>
                         </a>
-                        <div class="footer-excursion-button">
-                            <div class="g-container-box home-button">
+                    </div> 
+
+                    <div class="footer-excursion-button">
+                        <div class="g-container-box home-button">
                             <a href="" class="g-button">Посмотреть все экскурсии</a>
                         </div>
-                        </div>
-                        
                     </div>
                 </div>
             </div>  

@@ -1,4 +1,4 @@
-const swiper1 = new Swiper('.popular-excursions__info', {
+const swiperOptions = {
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -8,9 +8,9 @@ const swiper1 = new Swiper('.popular-excursions__info', {
       slidesPerView: 2,
       spaceBetween: 30,
     },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    1025: {
+      slidesPerView: 4,
+      spaceBetween: 80,
     }
   },
 
@@ -19,29 +19,58 @@ const swiper1 = new Swiper('.popular-excursions__info', {
     nextEl: '.popular-excursion__arrow-right',
     prevEl: '.popular-excursion__arrow-left',
   },
+};
 
-});
+if (window.matchMedia("(min-width: 1025px)").matches) {
+  swiperOptions.loop = true;
+  swiperOptions.autoplay = {delay: 1, };
+  swiperOptions.freeMode = true;
+  swiperOptions.speed = 5000;
+}
+const swiper1 = new Swiper('.popular-excursions__info', swiperOptions);
 
+// const swiper2 = new Swiper('.body-excursion__container-net-big', {
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//       spaceBetween: 30,
+//     },
+//     600: {
+//       slidesPerView: 2,
+//       spaceBetween: 30,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//       spaceBetween: 30,
+//     }
+//   },
 
-const swiper2 = new Swiper('.body-excursion__container-net-big', {
+//   navigation: {
+//     nextEl: '.body-excursion__arrow-right',
+//     prevEl: '.body-excursion__arrow-left',
+//   },
+
+// });
+
+const sliderSmall = new Swiper('.body-excursion__container-net-small', {
   breakpoints: {
     0: {
-      slidesPerView: 1,
-      spaceBetween: 30,
+      slidesPerView: 2,
+      spaceBetween: 6,
     },
     600: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 30,
     },
-    1024: {
-      slidesPerView: 3,
+    1025: {
+      slidesPerView: 4,
       spaceBetween: 30,
     }
   },
 
   navigation: {
-    nextEl: '.body-excursion__arrow-right',
-    prevEl: '.body-excursion__arrow-left',
+    nextEl: '.body-excursion__arrow-small-right',
+    prevEl: '.body-excursion__arrow-small-left',
   },
 
 });
@@ -106,7 +135,7 @@ const swiperFeedback = new Swiper('.feedback-people', {
       slidesPerView: 1,
       spaceBetween: 30,
     },
-    1024: {
+    1025: {
       slidesPerView: 2,
       spaceBetween: 30,
     },

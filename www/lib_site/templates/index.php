@@ -22,7 +22,7 @@
                     <div class="header-middle-container">
                         <p class="header-middle-textTop">увлектаелные экскурсии</p>
                         <p class="header-middle-textMiddle">ПО ИТАЛИИ И ЕВРОПЕ</p>
-                        <p class="header-middle-textBottom">60 городов и направлений</p>
+                        <p class="header-middle-textBottom">100 городов и направлений</p>
                     </div>    
                 </div>
                 <div class="header-location">
@@ -33,7 +33,7 @@
                 <div class="header-search"> 
                     <div class="header-search-container">  
                         <form class="header-search-form">
-                            <input class="header-search-input" type="text" placeholder="Название города">
+                            <input class="header-search-input" type="text" placeholder="Название города или достопримечательности">
                             <button class="header-search-button" type="submit">найти
                                 <div class="header-search-arrow">
                                     <div class="header-search-arrow1"></div>
@@ -47,7 +47,7 @@
         </div>
     </header>
     <div class="popular-excursions">
-        <div class="g-container">
+        
             <div class="popular-excursions__container">
                 <div class="popular-excursions__text">
                     <div class="popular-excursions__head">
@@ -169,7 +169,7 @@
                     <a href="" class="g-button">Посмотреть все экскурсии</a>
                 </div>
             </div>
-        </div>
+       
     </div>
     <div class="body-content">
         <!-- <div class="g-container">
@@ -253,19 +253,19 @@
                         <div class="body-text__item">
                             <img src="/imgNew/img/listg.png" alt="">
                             <div>
-                                <span class="body-text__item-head">Lorem ipsum dolor sit amet.<br></span>  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
+                                <span class="body-text__item-head">Экскурсии тщательно отобраны<br></span>и удобно разделены по категориям.<br>Никаких "сотен" однотипных прогулок.
                             </div>
                         </div>
                         <div class="body-text__item">
                             <img src="/imgNew/img/peoplecartg.png" alt="">
                             <div>
-                                <span class="body-text__item-head">Lorem ipsum dolor sit amet.<br></span>  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
+                                <span class="body-text__item-head">Профессиольные гиды<br></span>и проверенные путешественники<br>с рекомендацией.
                             </div>
                         </div>
                         <div class="body-text__item">
                             <img src="/imgNew/img/babkig.png" alt="">
                             <div>
-                                <span class="body-text__item-head">Lorem ipsum dolor sit amet.<br></span>  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
+                                <span class="body-text__item-head">Оплата по факту после экскурсии<br></span>и бесплатная отмена бронирования<br>за 24 часа.
                             </div>
                         </div>
                     </div>
@@ -286,25 +286,58 @@
 
                     <div class="body-excursion__container">
                         <div class="body-excursion__container-net-big"> 
+                            <div class="body-excursion__item">
+                                <div class="body-excursion__item-container">
+                                    <div class="excursion-item__text">
+                                        <a href="" class="excursion-text__head">Название экскурсии</a>
+                                        <div class="excursion-text__info">1 час</div>
+                                    </div>
+                                    <div class="excursion-item__arrow-container">
+                                        <div class="excursion-item__arrow">
+                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <div class="body-excursion__item">
+                                <div class="body-excursion__item-container">
+                                    <div class="excursion-item__text">
+                                        <a href="" class="excursion-text__head">Название экскурсии</a>
+                                        <div class="excursion-text__info">1 час</div>
+                                    </div>
+                                    <div class="excursion-item__arrow-container">
+                                        <div class="excursion-item__arrow">
+                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <div class="body-excursion__item">
+                                <div class="body-excursion__item-container">
+                                    <div class="excursion-item__text">
+                                        <a href="" class="excursion-text__head">Название экскурсии</a>
+                                        <div class="excursion-text__info">1 час</div>
+                                    </div>
+                                    <div class="excursion-item__arrow-container">
+                                        <div class="excursion-item__arrow">
+                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>       
+                        </div>
+                        
+                        <div class="body-excursion__container-net-small">
+                            <a href="#" class="body-excursion__arrow-small body-excursion__arrow-small-left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
                             <div class="body-excursion__slides swiper-wrapper">
                                 <div class="body-excursion__item swiper-slide">
                                     <div class="body-excursion__item-container">
                                         <div class="excursion-item__text">
-                                            <a href="" class="excursion-text__head">Название экскурсии теперь реально длинное</a>
-                                            <div class="excursion-text__info">1 час</div>
-                                        </div>
-                                        <div class="excursion-item__arrow-container">
-                                            <div class="excursion-item__arrow">
-                                                <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </div>
-
-                                <div class="body-excursion__item swiper-slide">
-                                    <div class="body-excursion__item-container">
-                                        <div class="excursion-item__text">
                                             <a href="" class="excursion-text__head">Название экскурсии</a>
                                             <div class="excursion-text__info">1 час</div>
                                         </div>
@@ -328,7 +361,21 @@
                                             </div>
                                         </div>  
                                     </div>
-                                </div> 
+                                </div>
+                                
+                                <div class="body-excursion__item swiper-slide">
+                                    <div class="body-excursion__item-container">
+                                        <div class="excursion-item__text">
+                                            <a href="" class="excursion-text__head">Название экскурсии</a>
+                                            <div class="excursion-text__info">1 час</div>
+                                        </div>
+                                        <div class="excursion-item__arrow-container">
+                                            <div class="excursion-item__arrow">
+                                                <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
 
                                 <div class="body-excursion__item swiper-slide">
                                     <div class="body-excursion__item-container">
@@ -342,89 +389,13 @@
                                             </div>
                                         </div>  
                                     </div>
-                                </div> 
+                                </div>
+                            </div>
 
-                                <div class="body-excursion__item swiper-slide">
-                                    <div class="body-excursion__item-container">
-                                        <div class="excursion-item__text">
-                                            <a href="" class="excursion-text__head">Название экскурсии</a>
-                                            <div class="excursion-text__info">1 час</div>
-                                        </div>
-                                        <div class="excursion-item__arrow-container">
-                                            <div class="excursion-item__arrow">
-                                                <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </div> 
-                            </div>      
-
-                            <a href="#" class="body-excursion__arrow body-excursion__arrow-left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-
-                            <a href="#" class="body-excursion__arrow body-excursion__arrow-right">
+                            <a href="#" class="body-excursion__arrow-small body-excursion__arrow-small-right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        </div>
-                        
-                        <!-- <div class="body-excursion__container-net-small">
-                            <div class="body-excursion__item body-excursion__item--active">
-                                <div class="body-excursion__item-container">
-                                    <div class="excursion-item__text">
-                                        <a href="" class="excursion-text__head">Название экскурсии</a>
-                                        <div class="excursion-text__info">1 час</div>
-                                    </div>
-                                    <div class="excursion-item__arrow-container">
-                                        <div class="excursion-item__arrow">
-                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-
-                            <div class="body-excursion__item body-excursion__item--active">
-                                <div class="body-excursion__item-container">
-                                    <div class="excursion-item__text">
-                                        <a href="" class="excursion-text__head">Название экскурсии</a>
-                                        <div class="excursion-text__info">1 час</div>
-                                    </div>
-                                    <div class="excursion-item__arrow-container">
-                                        <div class="excursion-item__arrow">
-                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                            
-                            <div class="body-excursion__item">
-                                <div class="body-excursion__item-container">
-                                    <div class="excursion-item__text">
-                                        <a href="" class="excursion-text__head">Название экскурсии</a>
-                                        <div class="excursion-text__info">1 час</div>
-                                    </div>
-                                    <div class="excursion-item__arrow-container">
-                                        <div class="excursion-item__arrow">
-                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-
-                            <div class="body-excursion__item">
-                                <div class="body-excursion__item-container">
-                                    <div class="excursion-item__text">
-                                        <a href="" class="excursion-text__head">Название экскурсии</a>
-                                        <div class="excursion-text__info">1 час</div>
-                                    </div>
-                                    <div class="excursion-item__arrow-container">
-                                        <div class="excursion-item__arrow">
-                                            <a><img src="/imgNew/img/arrRight.png" alt=""></a>   
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>     -->
+                        </div>    
                     </div>
                 </div>
             </div>
