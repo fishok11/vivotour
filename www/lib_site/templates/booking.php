@@ -100,6 +100,16 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 	}
 
 } ?>
+                <div class="index-hero" ><!--style="background-image: url('<?=$excursion['img_src_detail']?>')" -->
+                    <div class="g-container">
+                        <div class="g-container-box">
+                            <div class="home-promo">
+                                <h1 itemprop="headline name"><?=$excursion['title']?></h1>
+                                <h2><?=$excursion['annotation']?></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -107,9 +117,9 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (empty($_POST['surname']) || $_POST[
 		<div class="g-container">
 		  <div class="g-container-box">
 			<?	if (isset($_GET['order'])) { ?>
-					<h1>Оплата <?=get_title_by_tag($tag_id, 1)?> и резервирование мест</h1>
+					<h3>Оплата <?=get_title_by_tag($tag_id, 1)?> и резервирование мест</h3>
 			<?	} else { ?>
-					<h1><?=$excursion['title']?></h1>
+					<h3>Заказ экскурсии</h3>
 			<?  } ?>
 			</div>
 		</div>	

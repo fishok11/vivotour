@@ -20,7 +20,7 @@
     </div> -->
                 <div class="header-middle">
                     <div class="header-middle-container">
-                        <p class="header-middle-textTop">увлектаелные экскурсии</p>
+                        <p class="header-middle-textTop">увлектаельные экскурсии</p>
                         <p class="header-middle-textMiddle">ПО ИТАЛИИ И ЕВРОПЕ</p>
                         <p class="header-middle-textBottom">100 городов и направлений</p>
                     </div>    
@@ -47,7 +47,6 @@
         </div>
     </header>
     <div class="popular-excursions">
-        
             <div class="popular-excursions__container">
                 <div class="popular-excursions__text">
                     <div class="popular-excursions__head">
@@ -169,7 +168,6 @@
                     <a href="" class="g-button">Посмотреть все экскурсии</a>
                 </div>
             </div>
-       
     </div>
     <div class="body-content">
         <!-- <div class="g-container">

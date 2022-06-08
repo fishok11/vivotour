@@ -23,10 +23,11 @@ const swiperOptions = {
 
 if (window.matchMedia("(min-width: 1025px)").matches) {
   swiperOptions.loop = true;
-  swiperOptions.autoplay = {delay: 1, };
   swiperOptions.freeMode = true;
-  swiperOptions.speed = 5000;
+  swiperOptions.autoplay = {delay: 1, pauseOnMouseEnter: true, disableOnInteraction: false,};
+  swiperOptions.speed = 3000;
 }
+ 
 const swiper1 = new Swiper('.popular-excursions__info', swiperOptions);
 
 // const swiper2 = new Swiper('.body-excursion__container-net-big', {
@@ -147,6 +148,8 @@ const swiperFeedback = new Swiper('.feedback-people', {
   },
 });
 
+
+
 const burgerIconClosed = document.getElementsByClassName("header-burger-link")[0];
 
 const burgerIconOpen = document.getElementsByClassName("header-burger-menu-arrow")[0];
@@ -162,3 +165,13 @@ burgerIconOpen.addEventListener("click", function(e) {
   e.preventDefault();
   burgerMenu.classList.remove('header-burger-menu--active');
 });
+
+
+
+function swichPlaceholder() {
+  document.querySelector('.header-search-input').placeholder = 'Название города';
+};
+
+if (window.matchMedia("(max-width: 600px)").matches) {
+  swichPlaceholder();
+}
