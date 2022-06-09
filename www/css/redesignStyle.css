@@ -696,6 +696,11 @@ h3 {
     color: var(--main-gren);
     margin-bottom: 25px;
 }
+@media (max-width: 350px) {
+    .details__title {
+        font-size: 25px;
+    }
+}
 .details__item {
     display: flex;
     align-items: center;
@@ -904,7 +909,15 @@ h3 {
 .crumbs ul li a {
     text-decoration: none;
 }
+@media (max-width: 1024px) {
+    .crumbs ul {
+        margin-left: 20px;
+    }
+}
 @media (max-width: 600px) {
+    .crumbs ul {
+        margin-left: 0;
+    }
     .crumbs ul li a {
         font-size: 14px;
     }
@@ -2102,6 +2115,11 @@ h3 {
     .details__title {
         font-size: 27px;
     }
+    @media (max-width: 350px) {
+        .details__title {
+            font-size: 25px;
+        }
+    }
     .details__item {
         margin-bottom: 18px;
     }
@@ -2485,6 +2503,7 @@ h3 {
         margin-top: 25px;
     }
     .description-title-text {
+        color: #ffffff;
         font-size: 30px;
     }
     .description-text-left,
@@ -2494,6 +2513,16 @@ h3 {
         font-size: 17px;
     }
 
+    .footer-excursion {
+        background-color: #00000000;
+        padding: 0;
+        width: 100%;
+    }
+    .footer-excursion-container {
+        background-color: #00000000;
+        padding: 0;
+        width: 100%;
+    }
     .footer {
         background-size: 140% auto;
         background-position: top;
@@ -2610,7 +2639,8 @@ h3 {
     .page-city .home-promo h1 {
         margin: 0;
     }
-    .page-excursion .home-promo h1 {
+    .page-excursion .home-promo h1,
+    .page-booking .home-promo h1 {
         font-size: 8vw;
         margin: 0;
     }
@@ -2620,10 +2650,10 @@ h3 {
     .page-allcities .home-promo h1 {
         font-size: 8vw;
     }
-    .page-excursion .home-promo h2 {
+    .page-excursion .home-promo h2,
+    .page-booking .home-promo h2 {
         font-size: 6vw;
         margin: 0 0 10px 0;
-
         display: flex;
     }
     .header-middle {
@@ -2707,6 +2737,7 @@ h3 {
         margin-top: 25px;
     }
     .description-title-text {
+        color: var(--main-gren);
         font-size: 30px;
         text-align: center;
         line-height: 30px;
@@ -2719,16 +2750,7 @@ h3 {
     }
 
 
-    .footer-excursion {
-        background-color: #00000000;
-        padding: 0;
-        width: 100%;
-    }
-    .footer-excursion-container {
-        background-color: #00000000;
-        padding: 0;
-        width: 100%;
-    }
+
     .footer .g-button {
         display: none;
     }
