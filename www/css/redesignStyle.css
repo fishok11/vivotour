@@ -7,6 +7,10 @@ body {
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 18px;
     line-height: 1.5em;
+    
+}
+@font-face {
+    
 }
 p {
     font-size: 18px;
@@ -937,18 +941,23 @@ h3 {
     background-image: url('/imageNew/backgrounds_1920/background-header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     box-shadow: inset 0 -20px 0 rgba(255, 255, 255, 0.5);
     position: relative;
 }
+.header .g-container {
+    height: 100%;
+}
 .page-index .header {
     height: 700px;
-    background-position: center;
+    background-position: top;
 }
 .page-city .header {
     height: 600px;
 }
-
+.page-excursion .header {
+    height: 400px;
+}
 .header-container {
     height: 100%;
 }
@@ -1034,7 +1043,7 @@ h3 {
 .page-article .home-promo,
 .page-allcities .index-hero,
 .page-excursion .index-hero {
-    height: 360px;
+    height: 100%;
     display: flex;
     align-items: flex-end;
 }
@@ -1042,26 +1051,34 @@ h3 {
 .page-allcities .home-promo,
 .page-excursion .home-promo h1{
     color: #ffffff;
-    text-shadow: 0 0 30px #000000; 
+    text-shadow: 0 0 30px #000000,  0 0 30px black, 0 0 30px rgba(0, 0, 0, 0.5); 
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+.page-excursion .index-hero .g-container {
+    display: flex;
+    align-items: flex-end;
 }
 .page-excursion .home-promo h2{
     color: #ffffff;
-    text-shadow: 0 0 30px #000000;
-    line-height: 1.3em;
+    text-shadow: 0 0 30px #000000, 0 0 30px black, 0 0 30px rgba(0, 0, 0, 0.5);
+    line-height: 1em;
+    margin-top: 10px;
 }
-.page-city .index-hero{
-    margin-top: 50px;
-    height: 480px;
+.page-excursion .index-hero,
+.page-city .index-hero {
+    height: calc(100% - 120px);
+}
+.page-city .index-hero .g-container {
     display: flex;
     align-items: center;
 }
+
 .page-city .home-promo h1{
     display: flex;
     justify-content: center;
     color: #ffffff;
-    text-shadow: 0 0 30px #000000; 
+    text-shadow: 0 0 30px #000000, 0 0 30px black, 0 0 30px rgba(0, 0, 0, 0.5); 
     font-weight: bold;
 }
 .home-promo-tags {
@@ -1077,7 +1094,7 @@ h3 {
     border: 2px solid #ffffff;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 5px;
+    padding: 5px 10px;
     margin: 7px;
 }
 .page-article .index-hero .g-container {
@@ -1099,7 +1116,7 @@ h3 {
 .header-middle-textMiddle,
 .header-middle-textBottom { 
     color: #FFFFFF;
-    text-shadow: 0 0 30px #000000; 
+    text-shadow:  0 0 30px black, 0 0 30px black, 0 0 30px black;
 }
 .header-middle-textTop {
     width: 100%;
@@ -1107,7 +1124,8 @@ h3 {
     justify-content: flex-start;
     font-size: 42px;
     font-weight: lighter;
-    
+    color: #FFFFFF;
+    text-shadow:  0 0 30px black, 0 0 30px black, 0 0 30px rgba(0, 0, 0, 0.5);
 }
 .header-middle-textMiddle {
     height: auto;
@@ -1115,11 +1133,15 @@ h3 {
     font-weight: bold;
     line-height: 1em;
     margin-bottom: 0;
+    color: #FFFFFF;
+    text-shadow:  0 0 30px black, 0 0 30px black;
 }
 .header-middle-textBottom {
     font-size: 29px;
     display: flex;
     justify-content: center;
+    color: #FFFFFF;
+    text-shadow: 0 0 30px black, 0 0 30px black, 0 0 30px black;
 }
 .header-location {
     position: absolute;
@@ -1523,7 +1545,7 @@ h3 {
 .footer-menu-list{
     display: flex;
     justify-content: space-between;
-    padding: 18px;
+    padding: 18px 0;
     margin: 0;
 }
 .footer-menu-item {
@@ -2430,8 +2452,8 @@ h3 {
     }
     .home-promo-tags a {
         font-size: 16px;
-        padding:5px;
-        margin: 4px;
+        padding: 3px 7px;
+        margin: 3px;
     }
     .page-city .home-promo h1 {
         margin: 0;
@@ -2449,8 +2471,11 @@ h3 {
     .page-excursion .home-promo h2 {
         font-size: 6vw;
         margin: 0 0 10px 0;
-
         display: flex;
+    }
+    .page-city .index-hero,
+    .page-excursion .index-hero {
+        height: calc(100% - 120px);
     }
     .header-middle {
         margin-top: 130px;
