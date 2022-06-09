@@ -949,14 +949,11 @@ h3 {
     height: 100%;
 }
 .page-index .header {
-    height: 700px;
-    background-position: top;
+    height: 700px; 
 }
-.page-city .header {
-    height: 600px;
-}
+.page-city .header,
 .page-excursion .header {
-    height: 400px;
+    height: 500px;
 }
 .header-container {
     height: 100%;
@@ -1041,13 +1038,6 @@ h3 {
     border-bottom: 2px solid var(--main-gren);
 }
 .page-article .home-promo,
-.page-allcities .index-hero,
-.page-excursion .index-hero {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-}
-.page-article .home-promo,
 .page-allcities .home-promo,
 .page-excursion .home-promo h1{
     color: #ffffff;
@@ -1055,16 +1045,14 @@ h3 {
     font-weight: bold;
     margin-bottom: 10px;
 }
-.page-excursion .index-hero .g-container {
-    display: flex;
-    align-items: flex-end;
-}
 .page-excursion .home-promo h2{
     color: #ffffff;
     text-shadow: 0 0 30px #000000, 0 0 30px black, 0 0 30px rgba(0, 0, 0, 0.5);
     line-height: 1em;
     margin-top: 10px;
 }
+.page-article .index-hero,
+.page-allcities .index-hero,
 .page-excursion .index-hero,
 .page-city .index-hero {
     height: calc(100% - 120px);
@@ -1072,7 +1060,15 @@ h3 {
 .page-city .index-hero .g-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 0;
 }
+.page-allcities .index-hero .g-container,
+.page-article .index-hero .g-container,
+.page-excursion .index-hero .g-container {
+    display: flex;
+    align-items: flex-end;
+} 
 
 .page-city .home-promo h1{
     display: flex;
@@ -1093,9 +1089,10 @@ h3 {
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 5px 10px;
     margin: 7px;
+    font-weight: 500;
 }
 .page-article .index-hero .g-container {
     padding: 0;
@@ -1251,6 +1248,11 @@ h3 {
     margin: 3px;
     transform: rotate(-45deg)
 }
+.page-allcities .index-hero .g-container,
+ .page-article .index-hero .g-container,
+  .page-excursion .index-hero .g-container {
+      padding: 0;
+  }
 
 
 
@@ -1484,6 +1486,7 @@ h3 {
     text-decoration: none;
     border-bottom: 2px solid var(--main-gren);
     color: #000000;
+    font-weight: 300;
 }
 .description strong {
     font-weight: bold;
@@ -1496,13 +1499,13 @@ h3 {
 
 .footer { 
     height: auto;
-    background-color: #00285b;
+    background-color: #00235d;
     background-image: url("/imageNew/backgrounds_1920/footerall.jpg");
     background-size: 100% auto;
     background-position: top;
     background-repeat: no-repeat;
     padding-bottom: 50px;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .page-index .footer {
     background-image: url("/imageNew/backgrounds_1920/footer.jpg");
@@ -1562,6 +1565,7 @@ h3 {
     justify-content: space-between;
     margin-top: 45px;
     height: 142px;
+    width: 1080px;
 }
 .footer-contacts-chat {
     display: flex;
@@ -1578,6 +1582,23 @@ h3 {
     font-weight: bold;
     color: #FFFFFF;
     margin: 0;
+    padding-top: 18px;
+    position: relative;
+    top: 6px;
+    line-height: 0.8em;
+}
+.footer-copyright {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.footer-contacts-chat-text2-mobile {
+    width: fit-content;
+    display: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+    
 }
 .footer-contacts-chat-messenger {
     width: 163px;
@@ -1588,7 +1609,7 @@ h3 {
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    margin-bottom: 30px;
+    
 }
 .footer-contacts-chat-vk,
 .footer-contacts-chat-fb,
@@ -1680,6 +1701,7 @@ h3 {
     font-weight: 100;
     color: #FFFFFF;
     margin: 0;
+    line-height: 1.2em;
 }
 .footer-contacts-icons {
     width: 120px;
@@ -1689,25 +1711,31 @@ h3 {
 .footer-contacts-icons-logo {
     background-image: url("/imageNew/icons/logofooter.png");
     width: 120px;
-    height: 35px;
+    height: 39px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 0 28px 0;
+    margin: 5px 0 19px 0;
 }
 .footer-contacts-icons-massengers {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    margin: 0 0 25px 0;
+    margin: 18px 0 23px 0;
 }
 .footer-contacts-icons-inst,
-.footer-contacts-icons-vk,
 .footer-contacts-icons-tw,
 .footer-contacts-icons-fb {
     width: 20px;
     height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-contacts-icons-vk {
+    width: 23px;
+    height: 25px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1726,11 +1754,11 @@ h3 {
 }
 .footer-contacts-icons-logo-cards {
     background-image: url("/imageNew/icons/pay.png");
-    width: 120px;
+    width: 125px;
     height: 18px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 }
 
 
@@ -1764,15 +1792,17 @@ h3 {
     height: auto;
 }
 .page-guide .guide-index { 
-    margin-top: 30px;
-    margin-bottom: 30px;
+    
     padding: 25px 0;
     box-sizing: border-box;
 }
 .page-guide .guide-hero {
-    height: 360px;
+    height: calc(100% - 120px);
+}
+.page-guide .guide-hero .g-container {
     display: flex;
     align-items: flex-end;
+    padding: 0;
 }
 .page-guide .guide-hero .guide-index {
     display: flex;
@@ -1784,12 +1814,12 @@ h3 {
 .page-guide .guide-hero .guide-index .home-promo h1 {
     color: #ffffff;
     font-size: 50px;
-    text-shadow: 0 0 30px #000000;
+    text-shadow: 0 0 30px #000000, 0 0 30px black, 0 0 30px rgba(0, 0, 0, 0.5);
 }
 .page-guide .guide-hero .guide-index .home-promo h2 {
     color: #ffffff;
     font-size: 35px;
-    text-shadow: 0 0 30px #000000;
+    text-shadow: 0 0 30px #000000, 0 0 30px black, 0 0 30px rgba(0, 0, 0, 0.5);
 }
 .page-guide .single__body-title {
     font-weight: bold;
@@ -1828,8 +1858,6 @@ h3 {
         padding: 0 20px;
         box-sizing: border-box;
     }
-
-
     .navigation {
         display: flex;
         flex-direction: column;
@@ -2057,7 +2085,6 @@ h3 {
     .page-guide .guide-hero .guide-index {
         flex-direction: column;
     }
-
     .page-guide .guide-hero .guide-index .home-promo {
         padding: 0;
     }
@@ -2217,11 +2244,10 @@ h3 {
     }
     .page-guide .guide-hero .guide-index {
         flex-direction: column;
-        margin: 0;
-        
+        margin: 0; 
     }
     .page-guide .guide-hero {
-        height: 400px;
+        height: calc(100% - 120px);
         align-items: flex-end;
     }
     .page-guide .guide-hero .guide-index .home-promo {
@@ -2239,12 +2265,21 @@ h3 {
     } 
     .page-guide .guide-hero .guide-index .home-promo h1 {
         margin: 0;
-    }    
+    } 
+    .page-guide .guide-hero .g-container {
+        justify-content: center;
+    }   
 }
 @media (max-width: 360px) {
     .navigation-item__list--active {
         left: -40px;
         bottom: -170px;
+    }
+}
+@media (max-width: 1100px) {
+    .page-index .footer,
+    .footer-contacts {
+        width: auto;
     }
 } 
 @media (max-width: 1024px) {
@@ -2284,6 +2319,12 @@ h3 {
     }
     .page-allcities .home-promo h1 {
         font-size: 43px;
+    }
+    .page-excursion .home-promo h1 {
+        font-size: 40px;
+    }
+    .page-excursion .home-promo h2 {
+        font-size: 33px;
     }
     .header-location {
         display: none;
@@ -2349,7 +2390,11 @@ h3 {
         background-size: 140% auto;
         background-position: top;
         height: auto;
-        padding-bottom: 0;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .page-index .footer {
+        padding-bottom: 20px;
     }
     .footer-menu {
         display: none;
@@ -2361,19 +2406,29 @@ h3 {
         padding-top: 15px;
         margin-top: 0;
     }
+    .footer-contacts-numbers-phone {
+        margin-bottom: 10px;
+    }
     .footer-contacts-chat,
     .footer-contacts-numbers,
     .footer-contacts-mailing,
     .footer-contacts-icons {
         align-items: center;
     }
+    .footer-contacts-icons {
+        width: 130px;
+    }
     .footer-contacts-chat-text2,
     .footer-contacts-numbers-hours,
     .footer-contacts-icons-logo-cards {
         display: none;
     }
+    .footer-contacts-chat-text2-mobile {
+        display: block;
+    }
     .footer-contacts-numbers-mail {
         order: 1;
+        font-size: 23px;
     }
     .footer-contacts-chat-text1 {
         margin-bottom: 7px;
@@ -2383,10 +2438,12 @@ h3 {
     }
     .footer-contacts-mailing-text {
         margin-bottom: 15px;
+        text-align: center;
     }
     .footer-contacts-icons-logo {
         width: 180px;
         height: 60px;
+        margin-bottom: 0;
     }
     .footer-contacts-mailing {
         width: 100%;
@@ -2395,27 +2452,35 @@ h3 {
         width: 70%;
     }
     .footer-contacts-mailing-input {
-        width: 64%;
+        width: 61%;
         height: 45px;
     }
     .footer-contacts-mailing-button {
-        width: 36%;
+        width: 39%;
         height: 45px;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 500;
     }
     .footer-contacts-icons-massengers {
         width: 100%;
         justify-content: space-between;
+        margin: 10px 0;
     }
 }
 @media (max-width: 600px) {
+    .page-index .header {
+        height: 400px;
+    }
+    .page-index .header-middle {
+        margin-top: 30px;
+    }
+    .page-article .header,
+    .page-excursion .header {
+        height: 350px;
+    }
     .g-container {
         padding: 0 12px;
         box-sizing: border-box;
-    }
-    .page-index .header {
-        height: 500px;
     }
     .header-container {
         background-image: linear-gradient( rgb(152, 217, 236,1) 0%, rgba(173,220,234,0) 70%);
@@ -2425,23 +2490,29 @@ h3 {
     }
     .header-burger-link {
         display: block;
+        font-size: 35px;
+        top: 40px;
+    }
+    .header-burger-menu-arrow {
+        font-size: 35px;
+        top: 40px;
     }
     .header-top {
         display: flex;
         justify-content: center;
     }
     .header-logo {
-        max-width: 200px;
+        max-width: 150px;
         width: 100%;
-        max-height: 60px;
+        max-height: 45px;
         height: 100%;
         background-size: contain;
-        margin-top: 30px;
+        margin-top: 35px;
     }
     .header-logo-link {
-        max-width: 200px;
+        max-width: 150px;
         width: 100%;
-        max-height: 60px;
+        max-height: 45px;
         height: 100%;
     }
     .header-menu {
@@ -2452,7 +2523,7 @@ h3 {
     }
     .home-promo-tags a {
         font-size: 16px;
-        padding: 3px 7px;
+        padding: 5px 8px;
         margin: 3px;
     }
     .page-city .home-promo h1 {
@@ -2469,9 +2540,13 @@ h3 {
         font-size: 8vw;
     }
     .page-excursion .home-promo h2 {
-        font-size: 6vw;
+        font-size: 5.5vw;
         margin: 0 0 10px 0;
+        font-weight: 500;
+    }
+    .page-excursion .index-hero .g-container {
         display: flex;
+        align-items: center;
     }
     .page-city .index-hero,
     .page-excursion .index-hero {
@@ -2482,11 +2557,12 @@ h3 {
     }
     .header-middle-textTop {
         font-size: 6vw;
-        margin-bottom: 20px;
+        margin-bottom: 7px;
+        font-weight: 500;
     }
     .header-middle-textMiddle {
         font-size: 9vw;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .header-middle-textBottom {
         font-size: 6vw;
@@ -2566,7 +2642,6 @@ h3 {
         background-size: 300% auto;
         background-position: top;
         height: auto;
-        padding-bottom: 0;
     }
     .footer-menu {
         display: none;
@@ -2619,7 +2694,7 @@ h3 {
         width: 36%;
         height: 45px;
         font-size: 4vw;
-        font-weight: bold;
+        font-weight: 600;
     }
     .footer-contacts-icons-massengers {
         width: 100%;

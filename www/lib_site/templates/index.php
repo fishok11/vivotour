@@ -20,7 +20,7 @@
     </div> -->
                 <div class="header-middle">
                     <div class="header-middle-container">
-                        <p class="header-middle-textTop">увлекателные экскурсии</p>
+                        <p class="header-middle-textTop">увлекательные экскурсии</p>
                         <p class="header-middle-textMiddle">ПО ИТАЛИИ И ЕВРОПЕ</p>
                         <p class="header-middle-textBottom">100 городов и направлений</p>
                     </div>    
