@@ -413,7 +413,7 @@ ga('send', 'pageview');
                         <a href="#" class="footer-contacts-chat-fb"></a>
                         <a href="#" class="footer-contacts-chat-tg"></a>
                     </div>
-                    <p class="footer-contacts-chat-text2">2021 VIVO Tour</p>
+                    <p class="footer-contacts-chat-text2"><i class="fa-regular fa-copyright footer-copyright"></i> 2022 VIVO Tour</p>
                 </div>
                 <div class="footer-contacts-numbers">
                     <a href="#" class="footer-contacts-numbers-mail">support@vivotour.ru</a>
@@ -437,6 +437,7 @@ ga('send', 'pageview');
                         <a href="" class="footer-contacts-icons-fb"></a>
                     </div>
                     <a href="" class="footer-contacts-icons-logo-cards"></a>
+                    <p class="footer-contacts-chat-text2-mobile"><i class="fa-regular fa-copyright footer-copyright"></i> 2022 VIVO Tour</p>
                 </div>
             </div>
         </div>
