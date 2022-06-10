@@ -9,9 +9,6 @@ body {
     line-height: 1.5em;
     
 }
-@font-face {
-    
-}
 p {
     font-size: 18px;
 }
@@ -1119,19 +1116,19 @@ h3 {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: lighter;
     color: #FFFFFF;
-    text-shadow:  0 0 30px black, 0 0 30px black, 0 0 30px rgba(0, 0, 0, 0.5);
+    text-shadow:  0 0 30px black, 0 0 30px black, 0 0 30px rgba(255, 255, 255, 0.5);
 }
 .header-middle-textMiddle {
     height: auto;
-    font-size: 65px;
+    font-size: 70px;
     font-weight: bold;
     line-height: 1em;
     margin-bottom: 0;
     color: #FFFFFF;
-    text-shadow:  0 0 30px black, 0 0 30px black;
+    text-shadow:  0 0 25px black, 0 0 30px black, 0 0 25px rgba(255, 255, 255, 0.2);
 }
 .header-middle-textBottom {
     font-size: 29px;
@@ -2469,7 +2466,7 @@ h3 {
 }
 @media (max-width: 600px) {
     .page-index .header {
-        height: 400px;
+        height: 380px;
     }
     .page-index .header-middle {
         margin-top: 30px;
@@ -2557,37 +2554,40 @@ h3 {
     }
     .header-middle-textTop {
         font-size: 6vw;
-        margin-bottom: 7px;
+        margin-bottom: 3px;
         font-weight: 500;
+        z-index: 2;
     }
     .header-middle-textMiddle {
         font-size: 9vw;
-        margin-bottom: 10px;
+        
     }
     .header-middle-textBottom {
         font-size: 6vw;
     }
     .header-search {
         margin-top: 35px;
-        height: 63px;
+        height: 58px;
     }
     .header-search-container {
-        height: 63px;
+        height: 58px;
     }
     .header-search-form {
         width: calc(100% - 8px);
-        height: 55px;
+        height: 50px;
     }
     .header-search-input {
-        height: 55px;
+        height: 50px;
         padding-left: 38px;
+        background-size: 12px;
     }
     .header-search-button {
-        width: 40%;
-        height: 55px;
+        width: 50%;
+        height: 50px;
+        font-size: 18px;
     }
     .header-search-arrow {
-        margin: 0 10px;
+        margin: 0 10px 0 5px;
     }
     .background-feedback {
         background-size: 300% auto;
@@ -2684,7 +2684,7 @@ h3 {
         width: 100%;
     }
     .footer-contacts-mailing-form {
-        width: 90%;
+        width: 100%;
     }
     .footer-contacts-mailing-input {
         width: 64%;
@@ -2699,5 +2699,14 @@ h3 {
     .footer-contacts-icons-massengers {
         width: 100%;
         justify-content: space-between;
+    }
+}
+@media (max-width: 350px) {
+    .header-middle-textBottom,
+    .header-middle-textTop {
+        font-weight: 550;
+    }
+    .header-middle-textMiddle {
+        font-size: 9vw;
     }
 }
